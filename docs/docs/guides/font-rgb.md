@@ -1,9 +1,3 @@
-!!! note
-	For sample users, `Text Display` handles `$font` code automatically.
-
-	`$rgb` works wherever custom title title formatting is supported. The
-	`gr.WriteText2` method supports `$font` and `$rgb`.
-
 ### $rgb
 
 You can use these colour methods which are documented [here](https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Title_Formatting_Reference#Historical_and_Columns_UI_color_functions).
