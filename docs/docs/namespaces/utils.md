@@ -636,7 +636,7 @@ No return value.
 |Arguments|||
 |---|---|---|
 |message|`string`|
-|title|`string`|Default `JScript Panel 64`.|
+|title|`string`|Default `JScript Panel`.|
 
 No return value.
 

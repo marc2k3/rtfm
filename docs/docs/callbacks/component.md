@@ -58,7 +58,7 @@ Called when thread created by [fb.AddLocationsAsync](../namespaces/fb.md#fbaddlo
 |---|---|---|
 |index|`number`|
 
-On the main menu `File>JScript Panel 64`, there are 10 menu items and
+On the main menu `File>JScript Panel`, there are 10 menu items and
 whichever number is selected is sent as the `index` to this callback.
 
 Being main menu items now means you can bind them to global keyboard
@@ -75,10 +75,10 @@ what other users may already be using.
 	```js
 	function on_main_menu(index) {
 		switch (index) {
-		case 1: // triggered when File>JScript Panel 64>1 is run
+		case 1: // triggered when File>JScript Panel>1 is run
 			do_something();
 			break;
-		case 2: // triggered when File>JScript Panel 64>2 is run
+		case 2: // triggered when File>JScript Panel>2 is run
 			do_something_else();
 			break;
 		}

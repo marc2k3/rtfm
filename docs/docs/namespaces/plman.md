@@ -46,7 +46,7 @@ a dialog and is much more user friendly!
 	Before you can add a playlist lock, you must check
 	there is no lock present already. If another component
 	owns the lock, you have to use that component to
-	remove it. If the lock is owned by `JScript Panel 64` then
+	remove it. If the lock is owned by `JScript Panel` then
 	you must remove it first. This is because locks cannot be
 	edited. You have to remove it and then add a new one
 	with a new mask value.
@@ -57,7 +57,7 @@ a dialog and is much more user friendly!
 		// check if playlistIndex is valid
 		if (playlistIndex >= 0 && playlistIndex < plman.PlaylistCount) {
 			if (plman.IsPlaylistLocked(playlistIndex)) {
-				if (plman.GetPlaylistLockName(playlistIndex) == 'JScript Panel 64') {
+				if (plman.GetPlaylistLockName(playlistIndex) == 'JScript Panel') {
 					// We own this lock so we can remove it.
 					plman.RemovePlaylistLock(playlistIndex);
 				} else {
@@ -488,7 +488,7 @@ Returns a `boolean` value.
 
 !!! note
 	You can only remove a playlist lock if it's
-	owned by `JScript Panel 64`. You can check
+	owned by `JScript Panel`. You can check
 	this with [plman.GetPlaylistLockName](#plmangetplaylistlocknameplaylistindex). See
 	[plman.AddPlaylistLock](#plmanaddplaylistlockplaylistindex-mask) for an example.
 
