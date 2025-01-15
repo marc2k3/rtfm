@@ -278,8 +278,8 @@ No return value.
 
 	If supplying a `string`, it must be a stringified array. See [Styling Ranges Of Text](../guides/styling-ranges-text.md).
 
-See [utils.CreateTextLayout](../namespaces/utils.md#utilscreatetextlayouttext-font_name-font_size-font_weight-font_style-font_stretch-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) and
-[utils.CreateTextLayout2](../namespaces/utils.md#utilscreatetextlayout2text-fonts-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) for examples.
+See [utils.CreateTextLayout](../namespaces/utils.md#utilscreatetextlayouttext-font_name-font_size-font_weight-font_style-font_stretch-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
+for an example.
 
 ## `WriteTextSimple(text, font, colour, x, y, w, h[, text_alignment, paragraph_alignment, word_wrapping, trimming_granularity])`
 |Arguments|||

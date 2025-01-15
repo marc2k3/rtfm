@@ -1,9 +1,10 @@
 ## Using `IJSGraphics WriteText`
 
 This first example uses [IJSGraphics WriteText](../interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
-where you can apply custom fonts/colours to a single string. The limitation here is that
-scrolling text vertically is not supported so if you need that, you'll need to use
-the `utils.CreateTextLayout` / `utils.CreateTextLayout2` examples below.
+where you can apply custom fonts/colours to a single string.
+
+The limitation here is that scrolling text vertically is not supported so if you need that, you'll need to use
+the `utils.CreateTextLayout` examples below.
 
 !!! example
 	```js
@@ -72,7 +73,7 @@ the `utils.CreateTextLayout` / `utils.CreateTextLayout2` examples below.
 	```
 
 ## Using `utils.CreateTextLayout`
-Use something like this if you want scrollable text, a single font and to apply different colours.
+This example demonstrates scrollable text, a single font and a different colour per word.
 
 !!! example
 	```js
@@ -82,8 +83,10 @@ Use something like this if you want scrollable text, a single font and to apply 
 	// @import "%fb2k_component_path%helpers.txt"
 	// ==/PREPROCESSOR==
 
+	// see CreateFontString in helpers.txt
+	var font = CreateFontString('Segoe UI', 24);
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-	var layout = utils.CreateTextLayout(text, 'Segoe UI', 24);
+	var layout = utils.CreateTextLayout(text, font);
 	var offset = 0;
 	var text_height = 0;
 
@@ -139,8 +142,7 @@ Use something like this if you want scrollable text, a single font and to apply 
 	}
 	```
 
-## Using `utils.CreateTextLayout2`
-Use something like this if you want scrollable text, custom fonts and to apply different colours.
+This example demonstrates scrollable text, per-word colouring and per-word fonts.
 
 !!! example
 	```js
@@ -196,7 +198,7 @@ Use something like this if you want scrollable text, custom fonts and to apply d
 
 		// Stringify the fonts and create the text layout
 		var font_string = JSON.stringify(fonts);
-		layout = utils.CreateTextLayout2(text, font_string);
+		layout = utils.CreateTextLayout(text, font_string);
 
 		// Stringify the colours. This is passed to WriteTextLayout inside on_paint
 		colour_string = JSON.stringify(colours);

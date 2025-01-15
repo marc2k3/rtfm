@@ -116,8 +116,10 @@ you can supply a vertical offset.
 	// @import "%fb2k_component_path%helpers.txt"
 	// ==/PREPROCESSOR==
 
+	// see CreateFontString in helpers.txt
+	var font = CreateFontString('Segoe UI', 20);
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-	var layout = utils.CreateTextLayout(text, 'Segoe UI', 24);
+	var layout = utils.CreateTextLayout(text, font);
 	var offset = 0;
 	var text_height = 0;
 
@@ -135,10 +137,16 @@ you can supply a vertical offset.
 	}
 
 	function on_mouse_wheel(step) {
-		if (text_height < box.h) return;
+		if (text_height < box.h)
+			return;
+
 		offset += step * 60;
-		if (offset > 0) offset = 0;
-		else if (offset < box.h - text_height) offset = box.h - text_height;
+
+		if (offset > 0)
+			offset = 0;
+		else if (offset < box.h - text_height)
+			offset = box.h - text_height;
+
 		window.Repaint();
 	}
 
@@ -146,28 +154,13 @@ you can supply a vertical offset.
 		box.w = window.Width / 2;
 		box.h = window.Height / 2;
 		text_height = layout.CalcTextHeight(box.w);
-		if (text_height < box.h) offset = 0;
-		else if (offset < box.h - text_height) offset = box.h - text_height;
+
+		if (text_height < box.h)
+			offset = 0;
+		else if (offset < box.h - text_height)
+			offset = box.h - text_height;
 	}
 	```
-
-## `utils.CreateTextLayout2(text, fonts[, text_alignment, paragraph_alignment, word_wrapping, trimming_granularity])`
-|Arguments|||
-|---|---|---|
-|text|`string`|
-|fonts|`string`|This must be a stringified array of fonts. Anything other than an array will throw a script error.
-|text_alignment|[DWRITE_TEXT_ALIGNMENT](../flags.md#dwrite_text_alignment)|Default `0`.|
-|paragraph_alignment|[DWRITE_PARAGRAPH_ALIGNMENT](../flags.md#dwrite_paragraph_alignment)|Default `0`.|
-|word_wrapping|[DWRITE_WORD_WRAPPING](../flags.md#dwrite_word_wrapping)|Default `0`.|
-|trimming_granularity|[DWRITE_TRIMMING_GRANULARITY](../flags.md#dwrite_trimming_granularity)|Default `0`.|
-
-Returns an [ITextLayout](../interfaces/ITextLayout.md) instance.
-
-Use this if you want to apply multiple fonts to a single string of text and need scrolling support. When passing
-to [IJSGraphics WriteTextLayout](../interfaces/IJSGraphics.md#writetextlayouttext_layout-colour-x-y-w-h-vertical_offset),
-you can supply a vertical offset.
-
-See [Styling Ranges Of Text](../guides/styling-ranges-text.md) for more advanced usage notes.
 
 ## `utils.DateStringToTimestamp(str)`
 |Arguments|||
