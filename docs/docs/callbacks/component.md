@@ -37,14 +37,6 @@ Called when thread created by [utils.HTTPRequestAsync](../namespaces/utils.md#ut
 
 See [Web Requests](../guides/web-requests.md) for examples.
 
-## `on_load_image_done(image_path, image)`
-|Arguments|||
-|---|---|---|
-|image_path|`string`|The path that was originally supplied to [utils.LoadImageAsync](../namespaces/utils.md#utilsloadimageasyncwindow_id-path).|
-|image|[IJSImage](../interfaces/IJSImage.md)|Could be `null` on failure.|
-
-Called when thread created by [utils.LoadImageAsync](../namespaces/utils.md#utilsloadimageasyncwindow_id-path) is done.
-
 ## `on_locations_added(task_id, handle_list)`
 |Arguments|||
 |---|---|---|

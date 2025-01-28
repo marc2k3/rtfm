@@ -430,16 +430,6 @@ Returns an [IJSBitmap](../interfaces/IJSBitmap.md) instance or `null` on failure
 
 Returns an [IJSImage](../interfaces/IJSImage.md) instance or `null` on failure.
 
-## `utils.LoadImageAsync(window_id, path)`
-|Arguments|||
-|---|---|---|
-|window_id|[window.ID](window.md)|
-|path|`string`|
-
-No return value.
-
-Use in conjunction with [on_load_image_done](../callbacks/component.md#on_load_image_doneimage_path-image).
-
 ## `utils.MessageBox(prompt, title, flags)`
 |Arguments|||
 |---|---|---|
