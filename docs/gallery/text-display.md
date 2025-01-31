@@ -14,9 +14,9 @@ These are just some of the options available via the right click menu:
 ## Title Formatting
 [Playlist only fields](https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Title_Formatting_Reference#Playlist-only_fields) like `%list_index%`, `%list_total%`, etc are supported.
 
-A custom `$font` function and `$rgb` are also supported. You can read more [here](../docs/guides/font-rgb.md).
+A custom `$font` function and `$rgb` are also supported. You can read more [here](../guides/font-rgb.md).
 
-Also, you can check [Country Flags](../docs/guides/country-flags.md) if you store countries in your tags.
+Also, you can check [Country Flags](../guides/country-flags.md) if you store countries in your tags.
 
 `%jsp3_playlist_name%` should be self explanatory.
 

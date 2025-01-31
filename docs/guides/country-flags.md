@@ -91,4 +91,4 @@ Case is not important. You can supply the code or full name. A few examples:
 |fr|France|
 |de|Germany|
 
-A complete list of supported values can be found in this file: [countries.json](../../files/countries.json)
+A complete list of supported values can be found in this file: [countries.json](../files/countries.json)

@@ -34,7 +34,7 @@ No return value.
 |radiusX|`number`|
 |radiusY|`number`|
 |line_width|`number`|
-|colour|`number`,`string`|This can be a solid colour or [gradient](../guides/gradients.md).|
+|colour|`number`,`string`|This can be a solid colour or [gradient](../../guides/gradients.md).|
 
 No return value.
 
@@ -144,7 +144,7 @@ No return value.
 |x2|`number`|
 |y2|`number`|
 |line_width|`number`|
-|colour|`number`,`string`|This can be a solid colour or [gradient](../guides/gradients.md).|
+|colour|`number`,`string`|This can be a solid colour or [gradient](../../guides/gradients.md).|
 
 No return value.
 
@@ -156,7 +156,7 @@ No return value.
 |w|`number`|
 |h|`number`|
 |line_width|`number`|
-|colour|`number`,`string`|This can be a solid colour or [gradient](../guides/gradients.md).|
+|colour|`number`,`string`|This can be a solid colour or [gradient](../../guides/gradients.md).|
 
 No return value.
 
@@ -170,7 +170,7 @@ No return value.
 |radiusX|`number`|
 |radiusY|`number`|
 |line_width|`number`|
-|colour|`number`,`string`|This can be a solid colour or [gradient](../guides/gradients.md).|
+|colour|`number`,`string`|This can be a solid colour or [gradient](../../guides/gradients.md).|
 
 No return value.
 
@@ -181,7 +181,7 @@ No return value.
 |centreY|`number`|
 |radiusX|`number`|
 |radiusY|`number`|
-|colour|`number`,`string`|This can be a solid colour or [gradient](../guides/gradients.md).|
+|colour|`number`,`string`|This can be a solid colour or [gradient](../../guides/gradients.md).|
 
 No return value.
 
@@ -192,7 +192,7 @@ No return value.
 |y|`number`|
 |w|`number`|
 |h|`number`|
-|colour|`number`,`string`|This can be a solid colour or [gradient](../guides/gradients.md).|
+|colour|`number`,`string`|This can be a solid colour or [gradient](../../guides/gradients.md).|
 
 No return value.
 
@@ -205,7 +205,7 @@ No return value.
 |h|`number`|
 |radiusX|`number`|
 |radiusY|`number`|
-|colour|`number`,`string`|This can be a solid colour or [gradient](../guides/gradients.md).|
+|colour|`number`,`string`|This can be a solid colour or [gradient](../../guides/gradients.md).|
 
 No return value.
 
@@ -254,12 +254,12 @@ No return value.
 
 !!! note
 	The `font` must be in string form and this can come directly from using [window.GetUIFont](../namespaces/window.md#windowgetuifonttype).
-	See the dedicated [Fonts](../guides/fonts.md) page for how to create/manipulate your own. Using an array of fonts for styling substrings of the text is also supported. See [Styling Ranges Of Text](../guides/styling-ranges-text.md).
+	See the dedicated [Fonts](../../guides/fonts.md) page for how to create/manipulate your own. Using an array of fonts for styling substrings of the text is also supported. See [Styling Ranges Of Text](../../guides/styling-ranges-text.md).
 
 !!! note
 	If you want to apply a single colour to all of the text, simply supply a `number`.
 
-	If supplying a `string`, it must be a stringified array. See [Styling Ranges Of Text](../guides/styling-ranges-text.md). `$rgb`
+	If supplying a `string`, it must be a stringified array. See [Styling Ranges Of Text](../../guides/styling-ranges-text.md). `$rgb`
 	code in the `text` always takes precedence so if an array is supplied at the same time, it will be ignored.
 
 ## `WriteTextLayout(text_layout, colour, x, y, w, h, vertical_offset)`
@@ -276,7 +276,7 @@ No return value.
 !!! note
 	If you want to apply a single colour to all of the text, simply supply a `number`.
 
-	If supplying a `string`, it must be a stringified array. See [Styling Ranges Of Text](../guides/styling-ranges-text.md).
+	If supplying a `string`, it must be a stringified array. See [Styling Ranges Of Text](../../guides/styling-ranges-text.md).
 
 See [utils.CreateTextLayout](../namespaces/utils.md#utilscreatetextlayouttext-font_name-font_size-font_weight-font_style-font_stretch-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
 for an example.
@@ -300,4 +300,4 @@ No return value.
 
 !!! note
 	The `font` must be in string form and this can come directly from using [window.GetUIFont](../namespaces/window.md#windowgetuifonttype).
-	See the dedicated [Fonts](../guides/fonts.md) page for how to create/manipulate your own.
+	See the dedicated [Fonts](../../guides/fonts.md) page for how to create/manipulate your own.

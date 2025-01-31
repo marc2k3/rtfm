@@ -1,5 +1,5 @@
 This page is specifically for working with fonts that are passed
-to [IJSGraphics WriteText](../interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity).
+to [IJSGraphics WriteText](../docs/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity).
 
 Unlike previous versions of `JScript Panel`, fonts need to be supplied as strings. They can be created manually by
 using `JSON.stringify` on an object or returned from `window.GetUIFont`.
@@ -18,7 +18,7 @@ var font = JSON.stringify({
 });
 ```
 
-See [Flags](../flags.md) for supported `Weight`, `Style` and `Stretch` values.
+See [Flags](../docs/flags.md) for supported `Weight`, `Style` and `Stretch` values.
 
 You can even supply an empty string and defaults
 of `Segoe UI` and `16px` will be used.

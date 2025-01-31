@@ -35,7 +35,7 @@ Called when thread created by [IMetadbHandle GetAlbumArtAsync](../interfaces/IMe
 
 Called when thread created by [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-post_data) is done.
 
-See [Web Requests](../guides/web-requests.md) for examples.
+See [Web Requests](../../guides/web-requests.md) for examples.
 
 ## `on_locations_added(task_id, handle_list)`
 |Arguments|||

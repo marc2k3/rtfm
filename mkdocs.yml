@@ -51,13 +51,6 @@ nav:
     - Tips: docs/tips.md
     - Preprocessors: docs/preprocessors.md
     - Flags: docs/flags.md
-    - Guides:
-      - Fonts: docs/guides/fonts.md
-      - Styling Ranges Of Text: docs/guides/styling-ranges-text.md
-      - $font & $rgb: docs/guides/font-rgb.md
-      - Country Flags: docs/guides/country-flags.md
-      - Gradients: docs/guides/gradients.md
-      - Web Requests: docs/guides/web-requests.md
     - Callbacks:
       - Overview: docs/callbacks/index.md
       - Component: docs/callbacks/component.md
@@ -86,6 +79,13 @@ nav:
       - plman: docs/namespaces/plman.md
       - utils: docs/namespaces/utils.md
       - window: docs/namespaces/window.md
+  - Guides:
+    - Fonts: guides/fonts.md
+    - Styling Ranges Of Text: guides/styling-ranges-text.md
+    - $font & $rgb: guides/font-rgb.md
+    - Country Flags: guides/country-flags.md
+    - Gradients: guides/gradients.md
+    - Web Requests: guides/web-requests.md
   - Gallery:
       - Home: gallery/index.md
       - JS Playlist: gallery/jsplaylist.md

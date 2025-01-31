@@ -263,7 +263,7 @@ Returns a `string`. It will be empty if the clipboard contents are not text.
 
 Returns a `string`. Could be empty on failure.
 
-See [Country Flags](../guides/country-flags.md).
+See [Country Flags](../../guides/country-flags.md).
 
 ## `utils.GetFileSize(path)`
 |Arguments|||
@@ -326,7 +326,7 @@ Returns a `string`.
 |window_id|[window.ID](window.md)|
 |type|`number`|Use `0` for `GET`, `1` for `POST`.|
 |url|`string`|
-|user_agent_or_headers|`string`|Optional. See [Web Requests](../guides/web-requests.md) for examples.|
+|user_agent_or_headers|`string`|Optional. See [Web Requests](../../guides/web-requests.md) for examples.|
 |post_data|`string`|This is ignored for `GET` requests and can be omitted. It is required for `POST` requests. It could be form data or a stringified `JSON` object/array.|
 
 !!! note
@@ -339,7 +339,7 @@ the [on_http_request_done](../callbacks/component.md#on_http_request_donetask_id
 	When making a `POST` request, you should set a `Content-Type` header. Valid
 	values could be `application/json` or `application/x-www-form-urlencoded`.
 
-See [Web Requests](../guides/web-requests.md) for examples.
+See [Web Requests](../../guides/web-requests.md) for examples.
 
 ## `utils.InputBox(prompt, title[, default_value, error_on_cancel])`
 |Arguments|||
