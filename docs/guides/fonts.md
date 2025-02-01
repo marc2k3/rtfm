@@ -1,5 +1,7 @@
-This page is specifically for working with fonts that are passed
-to [IJSGraphics WriteText](../docs/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity).
+This page is for working with fonts that are passed to
+[IJSGraphics WriteText](../docs/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity),
+[IJSGraphics WriteTextSimple](../docs/interfaces/IJSGraphics.md#writetextsimpletext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) and
+[utils.CreateTextLayout](../docs/namespaces/utils.md#utilscreatetextlayouttext-font_name-font_size-font_weight-font_style-font_stretch-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity).
 
 Unlike previous versions of `JScript Panel`, fonts need to be supplied as strings. They can be created manually by
 using `JSON.stringify` on an object or returned from `window.GetUIFont`.
@@ -17,6 +19,9 @@ var font = JSON.stringify({
 	Strikethrough : strikethrough, // boolean
 });
 ```
+
+!!! note
+	`IJSGraphics WriteTextSimple` does not support `Underline` or `Strikethrough`.
 
 See [Flags](../docs/flags.md) for supported `Weight`, `Style` and `Stretch` values.
 
@@ -48,7 +53,7 @@ of `Segoe UI` and `16px` will be used.
 	}
 	```
 
-`font_str` can be passed directly to `gr.WriteText` without modification.
+`font_str` can be passed directly without modification.
 
 !!! example
 	```js
@@ -84,29 +89,26 @@ and then stringify it again.
 ## Creating your own from scratch
 
 Writing your own `JSON.stringify` statement for every font you create would be a bit cumbersome
-so you should consider writing your own helper function.
+so `helpers.txt` contains a simplified method to use anywhere.
 
-This is a simple one to give you an idea:
+```js
+function CreateFontString(name, size, bold) {
+	return JSON.stringify({
+		Name : name,
+		Size : Math.round(size * DPI / 72), // DPI comes from window.DPI
+		Weight : bold ? DWRITE_FONT_WEIGHT_BOLD : DWRITE_FONT_WEIGHT_NORMAL
+	});
+}
+```
 
-!!! example
-	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+Now it's easier to write...
 
-	function create_font_string(name, size, bold) {
-		return JSON.stringify({
-			Name : name,
-			Size : size,
-			Weight : bold ? DWRITE_FONT_WEIGHT_BOLD : DWRITE_FONT_WEIGHT_NORMAL,
-		});
-	}
+```js
+var font = CreateFontString("Verdana", 16);
+var large_bold_font = CreateFontString("Verdana", 24, true);
+```
 
-	// Now it's easier to write...
-
-	var font = create_font_string("Verdana", 16);
-	var large_bold_font = create_font_string("Verdana", 24, true);
-	```
+You can of course write your own if you need more customisation.
 
 ## Advanced usage
 

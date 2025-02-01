@@ -92,7 +92,7 @@ Returns an [IJSImage](../interfaces/IJSImage.md) instance.
 |Arguments|||
 |---|---|---|
 |text|`string`|
-|font_name|`string`|
+|font_name|`string`|See [fonts](../../guides/fonts.md).
 |font_size|`number`|
 |font_weight|[DWRITE_FONT_WEIGHT](../flags.md#dwrite_font_weight)|Default `400`.|
 |font_style|[DWRITE_FONT_STYLE](../flags.md#dwrite_font_style)|Default `0`.|
@@ -116,7 +116,6 @@ you can supply a vertical offset.
 	// @import "%fb2k_component_path%helpers.txt"
 	// ==/PREPROCESSOR==
 
-	// see CreateFontString in helpers.txt
 	var font = CreateFontString('Segoe UI', 20);
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 	var layout = utils.CreateTextLayout(text, font);

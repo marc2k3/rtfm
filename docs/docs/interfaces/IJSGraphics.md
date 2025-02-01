@@ -65,6 +65,8 @@ No return value.
 |w|`number`|
 |h|`number`|
 
+No return value.
+
 !!! example
 	Because this method does not support src co-ords,
 	this sample makes the original image square first which is more
@@ -239,7 +241,7 @@ No return value.
 |Arguments|||
 |---|---|---|
 |text|`string`|
-|font|`string`|See note below.|
+|font|`string`|See [fonts](../../guides/fonts.md).|
 |colour|`number`, `string`|See note below.|
 |x|`number`|
 |y|`number`|
@@ -273,6 +275,8 @@ No return value.
 |h|`number`|
 |vertical_offset|`number`|Default `0`.|
 
+No return value.
+
 !!! note
 	If you want to apply a single colour to all of the text, simply supply a `number`.
 
@@ -285,7 +289,7 @@ for an example.
 |Arguments|||
 |---|---|---|
 |text|`string`|`$rgb` and `$font` code will be ignored.
-|font|`string`|See note below. Must be a single font only. Also, `Underline` and `Strikethrough` properties are not supported and will be ignored.
+|font|`string`|See [fonts](../../guides/fonts.md).
 |colour|`number`|
 |x|`number`|
 |y|`number`|
@@ -297,7 +301,3 @@ for an example.
 |trimming_granularity|[DWRITE_TRIMMING_GRANULARITY](../flags.md#dwrite_trimming_granularity)|Default `0`.|
 
 No return value.
-
-!!! note
-	The `font` must be in string form and this can come directly from using [window.GetUIFont](../namespaces/window.md#windowgetuifonttype).
-	See the dedicated [Fonts](../../guides/fonts.md) page for how to create/manipulate your own.

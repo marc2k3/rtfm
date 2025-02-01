@@ -1,3 +1,7 @@
+!!! note
+	If any text you pass to `IJSGraphics WriteText` or `utils.CreateTextLayout` contain `$rgb`/`$font` code,
+	any colour/font arrays described on this page will be ignored. Title formatting always take precedence.
+
 ## Using `IJSGraphics WriteText`
 
 This first example uses [IJSGraphics WriteText](../docs/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
