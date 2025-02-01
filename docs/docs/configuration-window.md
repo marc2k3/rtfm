@@ -7,13 +7,12 @@ Right click any panel>`Configure` to open the `Configuration Window`.
 
 ![Configuration Window](../images/configuration-window.png)
 
-Using the `Tools` button you can access the following commands which should be
+Using the `Code` button you can access the following commands which should be
 self-explanatory.
 
 - `Reset`
 - `Import`
 - `Export`
-- `About`
 
 Use the `Style` button to change the [Editor Properties](#editor-properties).
 
@@ -33,9 +32,7 @@ Use the `Samples` button to quickly choose any of the included scripts.
 ## Editor Properties
 ![Editor Properties](../images/editor-properties.png)
 
-`style.caret.fore` and `style.selection.back` accept hex colours only.
-
-For all the others, you can combine any of the following options
+For `styles`, you can combine any of the following options
 separated by a comma.
 
 ||
@@ -48,3 +45,5 @@ separated by a comma.
 |back:HEX_COLOUR|
 
 Hex colours must be the full 6 digits like `#FF0000`.
+
+`colour.caret.fore` and `colour.selection.back` can be hex colours only.
