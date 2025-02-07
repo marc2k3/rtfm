@@ -70,13 +70,6 @@ Called when metadb contents change. This can be tag updates or database changes 
 ## `on_output_device_changed()`
 Called when output device changes.
 
-## `on_playback_follow_cursor_changed(state)`
-|Arguments|||
-|---|---|---|
-|state|`boolean`|
-
-Called when `Playback follow cursor` state is changed.
-
 ## `on_playback_dynamic_info()`
 Called when dynamic info such as VBR bitrate changes.
 
@@ -91,6 +84,13 @@ Called when dynamic info such as VBR bitrate changes.
 |handle|[IMetadbHandle](../interfaces/IMetadbHandle.md)|
 
 Called when currently playing file gets edited.
+
+## `on_playback_follow_cursor_changed(state)`
+|Arguments|||
+|---|---|---|
+|state|`boolean`|
+
+Called when `Playback follow cursor` state is changed.
 
 ## `on_playback_new_track(handle)`
 |Arguments|||
