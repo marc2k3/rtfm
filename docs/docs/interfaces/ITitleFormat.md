@@ -14,16 +14,6 @@ No return value.
 
 Returns a `string`. It will be empty if [foobar2000](https://www.foobar2000.org) is not playing.
 
-## `EvalActivePlaylistItem(playlistItemIndex)`
-|Arguments|||
-|---|---|---|
-|playlistItemIndex|`number`|
-
-Returns a `string`.
-
-Use if you want access to playlist specific fields such as `%list_index%`, `%list_total%`, `%isplaying%` etc.
-Full details [here](https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Title_Formatting_Reference#Playlist-only_fields).
-
 ## `EvalPlaylistItem(playlistIndex, playlistItemIndex)`
 |Arguments|||
 |---|---|---|
