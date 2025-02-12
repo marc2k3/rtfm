@@ -351,12 +351,3 @@ var SelectionType = {
 	media_library_viewer : 6,
 };
 ```
-
-## ImageEffect
-```js
-var ImageEffect = {
-	grayscale : 0,
-	invert : 1,
-	sepia : 2,
-};
-```

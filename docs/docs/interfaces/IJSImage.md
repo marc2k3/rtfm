@@ -8,45 +8,6 @@
 
 **Methods**
 
-## `ApplyEffect(effect)`
-|Arguments|||
-|---|---|---|
-|effect|[ImageEffect](../flags.md#imageeffect)|
-
-No return value.
-
-!!! example
-	```js
-	var original = utils.LoadImage(fb.ComponentPath + 'samples\\images\\1.webp');
-
-	var grayscale = original.Clone();
-	var invert = original.Clone();
-	var sepia = original.Clone();
-
-	grayscale.ApplyEffect(0);
-	invert.ApplyEffect(1);
-	sepia.ApplyEffect(2);
-
-	function on_mouse_lbtn_dblclk() {
-		original.SaveAs("z:\\original.jpg");
-		grayscale.SaveAs("z:\\grayscale.jpg");
-		invert.SaveAs("z:\\invert.jpg");
-		sepia.SaveAs("z:\\sepia.jpg");
-	}
-	```
-
-	=== "Original"
-		![Original](../../images/effect-original.jpg)
-
-	=== "Grayscale"
-		![Grayscale](../../images/effect-grayscale.jpg)
-
-	=== "Invert"
-		![Invert](../../images/effect-invert.jpg)
-
-	=== "Sepia"
-		![Sepia](../../images/effect-sepia.jpg)
-
 ## `Clone()`
 Returns an `IJSImage` instance.
 
