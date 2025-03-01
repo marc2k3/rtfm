@@ -12,7 +12,7 @@
 |window.MaxWidth|`number`|read, write|
 |window.MinHeight|`number`|read, write|
 |window.MinWidth|`number`|read, write|
-|[window.Name](../preprocessors.md#name)|`string`|read|
+|[window.Name](../../preprocessors.md#name)|`string`|read|
 |window.Width|`number`|read|
 
 **Methods**
@@ -243,7 +243,7 @@ No return value.
 
 No return value.
 
-Shows the [Configuration Window](../configuration-window.md).
+Shows the [Configuration Window](../../configuration-window.md).
 
 ## `window.ShowProperties()`
 

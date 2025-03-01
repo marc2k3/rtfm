@@ -5,7 +5,7 @@ Right click any panel>`Configure` to open the `Configuration Window`.
 	this happens, you can hold down the ++shift+windows++ keys and then right
 	click. This always brings up the default menu.
 
-![Configuration Window](../images/configuration-window.png)
+![Configuration Window](images/configuration-window.png)
 
 Using the `Code` button you can access the following commands which should be
 self-explanatory.
@@ -30,7 +30,7 @@ Use the `Samples` button to quickly choose any of the included scripts.
 |++shift+f3++|Find previous|
 
 ## Editor Properties
-![Editor Properties](../images/editor-properties.png)
+![Editor Properties](images/editor-properties.png)
 
 For `styles`, you can combine any of the following options
 separated by a comma.

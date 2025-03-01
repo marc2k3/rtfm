@@ -94,7 +94,7 @@ Called in other panels after [window.NotifyOthers](../namespaces/window.md#windo
 Should always be called when:
 
  * scripts are reloaded from the context menu / `window.Reload`
- * the OK/Apply buttons are used in the [Configuration Window](../configuration-window.md).
+ * the OK/Apply buttons are used in the [Configuration Window](../../configuration-window.md).
  * panels are removed/replaced in layout editing mode
  * [foobar2000](https://www.foobar2000.org) exits normally
 

@@ -1,5 +1,5 @@
 !!! note
-	`gr` on this page refers to [IJSGraphics](../docs/interfaces/IJSGraphics.md)
+	`gr` on this page refers to [IJSGraphics](../api/interfaces/IJSGraphics.md)
 
 Using `gr.FillRectangle` as an example, most will know the last argument is a
 `number` to represent a colour.

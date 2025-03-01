@@ -44,41 +44,42 @@ extra:
 extra_css:
   - stylesheets/extra.css
 nav:
-  - Overview: index.md
-  - Docs:
-    - Requirements & Installation: docs/index.md
-    - Configuration Window: docs/configuration-window.md
-    - Tips: docs/tips.md
-    - Preprocessors: docs/preprocessors.md
-    - Flags: docs/flags.md
+  - Home:
+    - Overview: index.md
+    - Requirements & Installation: installation.md
+    - Configuration Window: configuration-window.md
+    - Tips: tips.md
+    - Preprocessors: preprocessors.md
+  - API:
+    - Flags: api/flags.md
     - Callbacks:
-      - Overview: docs/callbacks/index.md
-      - Component: docs/callbacks/component.md
-      - Windows: docs/callbacks/windows.md
-      - foobar2000: docs/callbacks/foobar2000.md
+      - Overview: api/callbacks/index.md
+      - Component: api/callbacks/component.md
+      - Windows: api/callbacks/windows.md
+      - foobar2000: api/callbacks/foobar2000.md
     - Interfaces:
-      - IAudioChunk: docs/interfaces/IAudioChunk.md
-      - IContextMenuManager: docs/interfaces/IContextMenuManager.md
-      - IDropAction: docs/interfaces/IDropAction.md
-      - IFileInfo: docs/interfaces/IFileInfo.md
-      - IJSBitmap: docs/interfaces/IJSBitmap.md
-      - IJSGraphics: docs/interfaces/IJSGraphics.md
-      - IJSImage: docs/interfaces/IJSImage.md
-      - IMainMenuManager: docs/interfaces/IMainMenuManager.md
-      - IMenuObj: docs/interfaces/IMenuObj.md
-      - IMetadbHandle: docs/interfaces/IMetadbHandle.md
-      - IMetadbHandleList: docs/interfaces/IMetadbHandleList.md
-      - IPlayingItemLocation: docs/interfaces/IPlayingItemLocation.md
-      - ITextLayout: docs/interfaces/ITextLayout.md
-      - ITitleFormat: docs/interfaces/ITitleFormat.md
-      - ITooltip: docs/interfaces/ITooltip.md
+      - IAudioChunk: api/interfaces/IAudioChunk.md
+      - IContextMenuManager: api/interfaces/IContextMenuManager.md
+      - IDropAction: api/interfaces/IDropAction.md
+      - IFileInfo: api/interfaces/IFileInfo.md
+      - IJSBitmap: api/interfaces/IJSBitmap.md
+      - IJSGraphics: api/interfaces/IJSGraphics.md
+      - IJSImage: api/interfaces/IJSImage.md
+      - IMainMenuManager: api/interfaces/IMainMenuManager.md
+      - IMenuObj: api/interfaces/IMenuObj.md
+      - IMetadbHandle: api/interfaces/IMetadbHandle.md
+      - IMetadbHandleList: api/interfaces/IMetadbHandleList.md
+      - IPlayingItemLocation: api/interfaces/IPlayingItemLocation.md
+      - ITextLayout: api/interfaces/ITextLayout.md
+      - ITitleFormat: api/interfaces/ITitleFormat.md
+      - ITooltip: api/interfaces/ITooltip.md
     - Namespaces:
-      - console: docs/namespaces/console.md
-      - fb: docs/namespaces/fb.md
-      - playback: docs/namespaces/playback.md
-      - plman: docs/namespaces/plman.md
-      - utils: docs/namespaces/utils.md
-      - window: docs/namespaces/window.md
+      - console: api/namespaces/console.md
+      - fb: api/namespaces/fb.md
+      - playback: api/namespaces/playback.md
+      - plman: api/namespaces/plman.md
+      - utils: api/namespaces/utils.md
+      - window: api/namespaces/window.md
   - Guides:
     - Fonts: guides/fonts.md
     - Styling Ranges Of Text: guides/styling-ranges-text.md

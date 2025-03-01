@@ -1,7 +1,7 @@
 This page is for working with fonts that are passed to
-[IJSGraphics WriteText](../docs/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity),
-[IJSGraphics WriteTextSimple](../docs/interfaces/IJSGraphics.md#writetextsimpletext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) and
-[utils.CreateTextLayout](../docs/namespaces/utils.md#utilscreatetextlayouttext-font_name-font_size-font_weight-font_style-font_stretch-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity).
+[IJSGraphics WriteText](../api/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity),
+[IJSGraphics WriteTextSimple](../api/interfaces/IJSGraphics.md#writetextsimpletext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) and
+[utils.CreateTextLayout](../api/namespaces/utils.md#utilscreatetextlayouttext-font_name-font_size-font_weight-font_style-font_stretch-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity).
 
 Unlike previous versions of `JScript Panel`, fonts need to be supplied as strings. They can be created manually by
 using `JSON.stringify` on an object or returned from `window.GetUIFont`.
@@ -23,7 +23,7 @@ var font = JSON.stringify({
 !!! note
 	`IJSGraphics WriteTextSimple` does not support `Underline` or `Strikethrough`.
 
-See [Flags](../docs/flags.md) for supported `Weight`, `Style` and `Stretch` values.
+See [Flags](../api/flags.md) for supported `Weight`, `Style` and `Stretch` values.
 
 You can even supply an empty string and defaults
 of `Segoe UI` and `16px` will be used.

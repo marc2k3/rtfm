@@ -7,7 +7,7 @@ can import it like this.
 // ==/PREPROCESSOR==
 ```
 
-See [Preprocessors](preprocessors.md).
+See [Preprocessors](../preprocessors.md).
 
 ## DWRITE_FONT_WEIGHT
 ```js

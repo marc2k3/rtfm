@@ -17,5 +17,5 @@ are many included samples that don't require any knowledge at all. You
 can simply pick the one you want to use from the `Samples` button in
 the [Configuration Window](configuration-window.md).
 
-The [Gallery](../gallery/index.md) has recently been updated with more detailed
+The [Gallery](gallery/index.md) has recently been updated with more detailed
 setup notes / usage instructions.

@@ -4,7 +4,7 @@
 
 ## Using `IJSGraphics WriteText`
 
-This first example uses [IJSGraphics WriteText](../docs/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
+This first example uses [IJSGraphics WriteText](../api/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
 where you can apply custom fonts/colours to a single string.
 
 The limitation here is that scrolling text vertically is not supported so if you need that, you'll need to use

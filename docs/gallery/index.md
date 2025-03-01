@@ -1,6 +1,6 @@
 Not all `Samples` are included here.
 
-See the `Samples` button from the [Configuration Window](../docs/configuration-window.md)
+See the `Samples` button from the [Configuration Window](../configuration-window.md)
 for a complete list. After loading, the right click menu is your friend. Most options should
 be self explanatory!
 
