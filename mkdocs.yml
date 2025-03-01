@@ -3,6 +3,7 @@ copyright: Copyright &copy; 2022-2025 marc2003
 strict: true
 theme:
   name: material
+  custom_dir: docs/overrides
   icon:
     logo: material/language-javascript
   features:
