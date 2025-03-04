@@ -114,10 +114,7 @@ Called when playback order is changed.
 |---|---|---|
 |origin|[PlaybackQueueOrigin](../flags.md#playbackqueueorigin)|
 
-## `on_playback_seek(time)`
-|Arguments|||
-|---|---|---|
-|time|`number`|
+## `on_playback_seek()`
 
 ## `on_playback_starting(cmd, is_paused)`
 |Arguments|||
@@ -177,7 +174,4 @@ Called when
 ## `on_selection_changed()`
 Called when selection changes based on `File>Preferences>Display>Selection viewers`.
 
-## `on_volume_change(volume)`
-|Arguments|||
-|---|---|---|
-|volume|`number`|Floating point value in dB. Minimum is `-100`, maximum is `0`.|
+## `on_volume_change()`
