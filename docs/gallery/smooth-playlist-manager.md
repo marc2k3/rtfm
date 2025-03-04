@@ -5,7 +5,6 @@ This was originally created by [Br3tt aka Falstaff](https://www.deviantart.com/b
 ## Features
 - Order playlists by dragging items with the mouse. Multi-select is not supported.
 - Sort all playlists by name using the right click menu.
-- Preset autoplaylists are available.
 - Apply [playlist locks](../images/playlist-lock.png).
 - Restore deleted playlists which remain for the lifetime of the current [foobar2000](https://www.foobar2000.org) session.
 - Cover art or custom image as background supported (including a blur effect).
