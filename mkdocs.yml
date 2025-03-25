@@ -58,6 +58,13 @@ nav:
       - Component: api/callbacks/component.md
       - Windows: api/callbacks/windows.md
       - foobar2000: api/callbacks/foobar2000.md
+    - Namespaces:
+      - console: api/namespaces/console.md
+      - fb: api/namespaces/fb.md
+      - playback: api/namespaces/playback.md
+      - plman: api/namespaces/plman.md
+      - utils: api/namespaces/utils.md
+      - window: api/namespaces/window.md
     - Interfaces:
       - IAudioChunk: api/interfaces/IAudioChunk.md
       - IContextMenuManager: api/interfaces/IContextMenuManager.md
@@ -74,13 +81,6 @@ nav:
       - ITextLayout: api/interfaces/ITextLayout.md
       - ITitleFormat: api/interfaces/ITitleFormat.md
       - ITooltip: api/interfaces/ITooltip.md
-    - Namespaces:
-      - console: api/namespaces/console.md
-      - fb: api/namespaces/fb.md
-      - playback: api/namespaces/playback.md
-      - plman: api/namespaces/plman.md
-      - utils: api/namespaces/utils.md
-      - window: api/namespaces/window.md
   - Guides:
     - Fonts: guides/fonts.md
     - Styling Ranges Of Text: guides/styling-ranges-text.md
