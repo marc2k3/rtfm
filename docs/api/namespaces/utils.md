@@ -88,15 +88,11 @@ Parent folders are created if they don't exist.
 
 Returns an [IJSImage](../interfaces/IJSImage.md) instance.
 
-## `utils.CreateTextLayout(text, font_name, font_size[, font_weight, font_style, font_stretch, text_alignment, paragraph_alignment, word_wrapping, trimming_granularity])`
+## `utils.CreateTextLayout(text, font_str, [text_alignment, paragraph_alignment, word_wrapping, trimming_granularity])`
 |Arguments|||
 |---|---|---|
 |text|`string`|
-|font_name|`string`|See [fonts](../../guides/fonts.md).
-|font_size|`number`|
-|font_weight|[DWRITE_FONT_WEIGHT](../flags.md#dwrite_font_weight)|Default `400`.|
-|font_style|[DWRITE_FONT_STYLE](../flags.md#dwrite_font_style)|Default `0`.|
-|font_stretch|[DWRITE_FONT_STRETCH](../flags.md#dwrite_font_stretch)|Default `5`.|
+|font_str|`string`|See [fonts](../../guides/fonts.md).
 |text_alignment|[DWRITE_TEXT_ALIGNMENT](../flags.md#dwrite_text_alignment)|Default `0`.|
 |paragraph_alignment|[DWRITE_PARAGRAPH_ALIGNMENT](../flags.md#dwrite_paragraph_alignment)|Default `0`.|
 |word_wrapping|[DWRITE_WORD_WRAPPING](../flags.md#dwrite_word_wrapping)|Default `0`.|
