@@ -10,7 +10,7 @@
 |Arguments|||
 |---|---|---|
 |text|`string`|
-|font_str|`string`
+|font_str|`string`|See [fonts](../../guides/fonts.md).
 
 Returns a `number`.
 
@@ -76,7 +76,7 @@ Parent folders are created if they don't exist.
 
 Returns an [IJSImage](../interfaces/IJSImage.md) instance.
 
-## `utils.CreateTextLayout(text, font_str, [text_alignment, paragraph_alignment, word_wrapping, trimming_granularity])`
+## `utils.CreateTextLayout(text, font_str[, text_alignment, paragraph_alignment, word_wrapping, trimming_granularity])`
 |Arguments|||
 |---|---|---|
 |text|`string`|
