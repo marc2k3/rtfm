@@ -6,19 +6,7 @@
 
 **Methods**
 
-## `utils.CalcTextWidth(text, font_name, font_size[, font_weight, font_style, font_stretch])`
-|Arguments|||
-|---|---|---|
-|text|`string`|
-|font_name|`string`|
-|font_size|`number`|
-|font_weight|[DWRITE_FONT_WEIGHT](../flags.md#dwrite_font_weight)|Default `400`.|
-|font_style|[DWRITE_FONT_STYLE](../flags.md#dwrite_font_style)|Default `0`.|
-|font_stretch|[DWRITE_FONT_STRETCH](../flags.md#dwrite_font_stretch)|Default `5`.|
-
-Returns a `number`.
-
-## `utils.CalcTextWidth2(text, font_str)`
+## `utils.CalcTextWidth(text, font_str)`
 |Arguments|||
 |---|---|---|
 |text|`string`|
@@ -30,7 +18,7 @@ Returns a `number`.
 	```js
 	var text = "blah";
 	var font = window.GetUIFont(0);
-	var width = utils.CalcTextWidth2(text, font);
+	var width = utils.CalcTextWidth(text, font);
 	```
 
 ## `utils.CheckFont(name)`
