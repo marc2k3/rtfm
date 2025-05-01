@@ -2,12 +2,6 @@ This was originally created by [Br3tt aka Falstaff](https://www.deviantart.com/b
 
 ![smooth playlist](../images/smooth-playlist.png)
 
-## Clickable ratings
-!!! note
-	The behaviour of clickable ratings depend on the presence of `foo_playcount`. When installed,
-	`Playback Statistics` will be used. Without it, `RATING` tags are written
-	to your files.
-
 ## Features
 - Variable height group headers with album art. Right click the header bar or scrollbar to change options/turn off grouping.
 - Cover art or custom image as background supported (including a blur effect).
