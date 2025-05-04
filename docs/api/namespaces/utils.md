@@ -28,11 +28,10 @@ Returns a `number`.
 
 Returns a `boolean` value.
 
-## `utils.ColourPicker(default_colour[, error_on_cancel])`
+## `utils.ColourPicker(default_colour)`
 |Arguments|||
 |---|---|---|
 |default_colour|`number`|
-|error_on_cancel|`boolean`|Default `false`. If set to `true`, you must use try/catch to prevent script errors.|
 
 Returns a `number` which can used as the `colour` in many methods.
 
