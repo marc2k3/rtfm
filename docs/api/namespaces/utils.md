@@ -207,6 +207,18 @@ Use in conjunction with [on_download_image_done](../callbacks/component.md#on_do
 
 	There is a maximum size limit in place. Anything larger than `64MB` will fail to download.
 
+## `utils.Env(str)`
+|Arguments|||
+|---|---|---|
+|str|`string`|
+
+Returns a `string`.
+
+!!! example
+	``` js
+	console.log(utils.Env("%windir%")); // C:\Windows
+	```
+
 ## `utils.FormatDuration(seconds)`
 |Arguments|||
 |---|---|---|
