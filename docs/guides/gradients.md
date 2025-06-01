@@ -32,18 +32,14 @@ If you want to insert more colours:
 ```js
 var stops = [
 	[0, RGB(255, 0, 0)],
-	[0.2, RGB(0, 255, 0)],
+	[0.5, RGB(0, 255, 0)],
 	[1, RGB(0, 0, 255)],
 ];
 ```
 
-`0.5` might be a more desirable `position` for the second `stop` but it's just an example
-that anything between `0` and `1` is valid.
+## Linear brush
+Now we know what `stops` are, we can create a [linear brush](https://learn.microsoft.com/en-us/windows/win32/direct2d/direct2d-brushes-overview#using-linear-gradient-brushes).
 
-## Brushes
-Now we know what `stops` are, we can create a brush. This can be [Linear](https://learn.microsoft.com/en-us/windows/win32/direct2d/direct2d-brushes-overview#using-linear-gradient-brushes) or [Radial](https://learn.microsoft.com/en-us/windows/win32/direct2d/direct2d-brushes-overview#using-radial-gradient-brushes).
-
-### Linear
 A linear brush must have 3 properties: `Start`, `End` and `Stops`.
 
 ```js
@@ -54,16 +50,24 @@ var linear_brush = {
 };
 ```
 
-The `Start` and `End` values are relative the `x` and `y` positions of the rectangle.
+The `Start` and `End` values are relative to the `x` and `y` positions of the rectangle.
 
 If we lift `FillGradientRectangle` from `helpers.txt`, we can inspect a working example.
 
 ```js
 function FillGradientRectangle(gr, x, y, w, h, direction, colour1, colour2) {
-	var stops = [[0, colour1], [1, colour2]];
+	var stops = [
+		[0, colour1],
+		[1, colour2]
+	];
+
 	var brush = {Start : [0, 0], Stops: stops};
-	if (direction == 0) brush.End = [0, h];
-	else brush.End = [w, 0];
+
+	if (direction == 0) // vertical
+		brush.End = [0, h];
+	else // horizontal
+		brush.End = [w, 0];
+
 	gr.FillRectangle(x, y, w, h, JSON.stringify(brush));
 }
 ```
@@ -98,42 +102,5 @@ For a diagonal effect, you can do something like this:
 	function on_paint(gr) {
 		linear_brush.End = [window.Width, window.Height];
 		gr.FillRectangle(0, 0, window.Width, window.Height, JSON.stringify(linear_brush));
-	}
-	```
-
-### Radial
-A radial brush must have 3 properties: `Centre`, `Radius` and `Stops`.
-
-```js
-var radial_brush = {
-	Centre : [0, 0], // x and y values
-	Radius : [0, 0], // x and y values
-	Stops: stops
-};
-```
-
-!!! example
-	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
-
-	var stops = [
-		[ 0.0, RGB(227, 9, 64) ],
-		[ 0.33, RGB(231, 215, 2) ],
-		[ 0.66, RGB(15, 168, 149) ],
-		[ 1.0, RGB(19, 115, 232) ]
-	];
-
-	var radial_brush = {
-		Centre : [0, 0], // x and y values
-		Radius : [0, 0], // x and y values
-		Stops: stops
-	};
-
-	function on_paint(gr) {
-		radial_brush.Centre = [window.Width / 2, window.Height / 2];
-		radial_brush.Radius = [window.Width / 2, window.Height / 2];
-		gr.FillRectangle(0, 0, window.Width, window.Height, JSON.stringify(radial_brush));
 	}
 	```
