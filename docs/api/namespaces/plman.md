@@ -291,13 +291,6 @@ is not locked.
 
 Returns a `string`.
 
-## `plman.GetPlaylistSelectedIndexes(playlistIndex)`
-|Arguments|||
-|---|---|---|
-|playlistIndex|`number`|Must be valid.|
-
-Returns a `VBArray` so you need to use `.toArray()` on the result.
-
 ## `plman.GetPlaylistSelectedItems(playlistIndex)`
 |Arguments|||
 |---|---|---|
