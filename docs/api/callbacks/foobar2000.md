@@ -147,9 +147,7 @@ Called when the status bar is double clicked while playing. Also called by the m
 ## `on_playlist_items_removed(playlistIndex)`
 ## `on_playlist_items_reordered(playlistIndex)`
 ## `on_playlist_items_replaced(playlistIndex)`
-
-## `on_playlist_items_selection_change()`
-Called when playlist item selection changes.
+## `on_playlist_items_selection_change(playlistIndex)`
 
 ## `on_playlist_stop_after_current_changed(state)`
 |Arguments|||
