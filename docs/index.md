@@ -20,7 +20,7 @@ Here are just some of the features provided by the component...
 * [Save settings](api/namespaces/window.md#windowgetpropertyname-default_value) on a per panel basis. These persist between restarts
 and are stored inside the layout configuration file for whichever UI your are using. You can also write your own functions to
 load/save settings from `JSON` or plain text files.
-* [Built in support](api/namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-post_data) for
+* [Built in support](api/namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-body) for
 making `GET / POST` requests which return plain text and there is also a method for downloading binary files. If you prefer, you
 can use the `Microsoft.XMLHTTP` `ActiveX` object.
 * There are many built in methods for working with the local filesystem, launching external applications etc. Previous

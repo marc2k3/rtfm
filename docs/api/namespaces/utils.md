@@ -314,14 +314,14 @@ Returns a `VBArray` so you need to use `.toArray()` on the result.
 
 Returns a `string`.
 
-## `utils.HTTPRequestAsync(window_id, type, url[, user_agent_or_headers, post_data])`
+## `utils.HTTPRequestAsync(window_id, type, url[, user_agent_or_headers, body])`
 |Arguments|||
 |---|---|---|
 |window_id|[window.ID](window.md)|
 |type|`number`|Use `0` for `GET`, `1` for `POST`.|
 |url|`string`|
 |user_agent_or_headers|`string`|Optional. See [Web Requests](../../guides/web-requests.md) for examples.|
-|post_data|`string`|This is ignored for `GET` requests and can be omitted. It is required for `POST` requests. It could be form data or a stringified `JSON` object/array.|
+|body|`string`|This is ignored for `GET` requests and can be omitted. It is required for `POST` requests. It could be form data or a stringified `JSON` object/array.|
 
 !!! note
 	This is for fetching plain text only. See [utils.DownloadFileAsync](#utilsdownloadfileasyncwindow_id-url-path-verify_image) for downloading binary files or [utils.DownloadImageAsync](#utilsdownloadimageasyncwindow_id-url) for downloading images in memory.

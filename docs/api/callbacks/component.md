@@ -27,13 +27,13 @@ Called when thread created by [IMetadbHandle GetAlbumArtAsync](../interfaces/IMe
 ## `on_http_request_done(task_id, success, response_text, status, response_headers)`
 |Arguments|||
 |---|---|---|
-|task_id|`number`|The return value from the original [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-post_data) call.|
+|task_id|`number`|The return value from the original [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-body) call.|
 |success|`boolean`|If `true`, it doesn't necessarily mean `HTTP` status `200` but it indicates the request was completed succesfully so the response text is from the server.|
 |response_text|`string`|
 |status|`number`|Will be `0` if `success` is `false` otherwise it will the `HTTP` status code from the server.|
 |response_headers|`string`|This is a stringified `JSON` object so you need to use `JSON.parse` to access it. It's only valid if `success` was `true`.|
 
-Called when thread created by [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-post_data) is done.
+Called when thread created by [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-body) is done.
 
 See [Web Requests](../../guides/web-requests.md) for examples.
 

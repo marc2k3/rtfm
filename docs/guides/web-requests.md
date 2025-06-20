@@ -1,7 +1,7 @@
 !!! note
 	This is for fetching plain text only. See [utils.DownloadFileAsync](../api/namespaces/utils.md#utilsdownloadfileasyncwindow_id-url-path-verify_image) for downloading binary files or [utils.DownloadImageAsync](../api/namespaces/utils.md#utilsdownloadimageasyncwindow_id-url) for downloading images in memory.
 
-See also: [utils.HTTPRequestAsync](../api/namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-post_data) and
+See also: [utils.HTTPRequestAsync](../api/namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-body) and
 [on_http_request_done](../api/callbacks/component.md#on_http_request_donetask_id-success-response_text-status-response_headers).
 
 ## GET requests
@@ -67,8 +67,8 @@ var headers = JSON.stringify({
 var url = ...
 var POST = 1;
 var obj = ...
-var post_data = JSON.stringify(obj);
-var id = utils.HTTPRequestAsync(window.ID, POST, url, headers, post_data);
+var body = JSON.stringify(obj);
+var id = utils.HTTPRequestAsync(window.ID, POST, url, headers, body);
 ```
 
 ## Handling the response
