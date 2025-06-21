@@ -539,35 +539,23 @@ Returns a `boolean` value.
 
 Returns a `boolean` value.
 
-## `utils.ReplaceIllegalChars(str[, modern, strip_trailing_periods])`
+## `utils.ReplaceIllegalChars(str[, strip_trailing_periods])`
 |Arguments|||
 |---|---|---|
 |str|`string`|
-|modern|`boolean`|Default `true`.|
 |strip_trailing_periods|`boolean`|Default `false`. Set to `true` if `str` is a folder name.|
 
 Returns a `string`.
 
 !!! example
-	=== "Modern"
-		```js
-		var chars = '"\\\/*|:<>?';
-		console.log(utils.ReplaceIllegalChars(chars, true));
-		```
+	```js
+	var chars = '"\\\/*|:<>?';
+	console.log(utils.ReplaceIllegalChars(chars, true));
+	```
 
-		``` markdown title="Output"
-		''⧵⁄∗∣∶˂˃？
-		```
-
-	=== "Legacy"
-		```js
-		var chars = '"\\\/*|:<>?';
-		console.log(utils.ReplaceIllegalChars(chars, false));
-		```
-
-		``` markdown title="Output"
-		''--x_-__
-		```
+	``` markdown title="Output"
+	''⧵⁄∗∣∶˂˃？
+	```
 
 ## `utils.Run(app[, params])`
 |Arguments|||
