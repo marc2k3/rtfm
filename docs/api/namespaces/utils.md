@@ -550,7 +550,7 @@ Returns a `string`.
 !!! example
 	```js
 	var chars = '"\\\/*|:<>?';
-	console.log(utils.ReplaceIllegalChars(chars, true));
+	console.log(utils.ReplaceIllegalChars(chars));
 	```
 
 	``` markdown title="Output"
