@@ -18,13 +18,13 @@ A custom `$font` function and `$rgb` are also supported. You can read more [here
 
 Also, you can check [Country Flags](../guides/country-flags.md) if you store countries in your tags.
 
-`%jsp3_playlist_name%` should be self explanatory.
+`%jsp_playlist_name%` should be self explanatory.
 
-Finally ,`$jsp3_since` can display the difference between now and a given date/time string.
+Finally ,`$jsp_since` can display the difference between now and a given date/time string.
 Use with `Playback Statistics` `%last_played%` or similar.
 
 ```
-$jsp3_since(%last_played%)
+$jsp_since(%last_played%)
 ```
 
 could display something like `5wk 2d`.
