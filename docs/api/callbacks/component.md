@@ -54,8 +54,7 @@ On the main menu `File>JScript Panel`, there are 10 menu items and
 whichever number is selected is sent as the `index` to this callback.
 
 Being main menu items now means you can bind them to global keyboard
-shortcuts, standard toolbar buttons, panel stack splitter buttons,
-etc.
+shortcuts, standard toolbar buttons, etc.
 
 Remember to think carefully about where you use this code as you
 probably only want it to run once so don't include it in common files
