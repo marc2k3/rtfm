@@ -184,11 +184,6 @@ Returns index of named playlist or newly created playlist.
 
 Returns the found index or `-1` on failure.
 
-## `plman.GetActivePlaylistFocusItem()`
-Returns an [IMetadbHandle](../interfaces/IMetadbHandle.md) instance.
-
-Handle of the currently selected active playlist item or `null` on failure.
-
 ## `plman.GetGUID(playlistIndex)`
 |Arguments|||
 |---|---|---|

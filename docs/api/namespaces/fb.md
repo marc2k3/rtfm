@@ -91,7 +91,7 @@ Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
 
 !!! example
 	```js
-	var handle = plman.GetActivePlaylistFocusItem();
+	var handle = fb.GetFocusItem();
 	var handle_list = fb.CreateHandleList(handle);
 	var image_path = ...
 	handle_list.AttachImage(image_path, 0);
@@ -204,6 +204,11 @@ other components, a file selection from Explorer, etc.
 		return true;
 	}
 	```
+
+## `fb.GetFocusItem()`
+Returns an [IMetadbHandle](../interfaces/IMetadbHandle.md) instance.
+
+Handle of the currently selected active playlist item or `null` on failure.
 
 ## `fb.GetLibraryItems([query])`
 |Arguments|||

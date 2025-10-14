@@ -3,7 +3,7 @@ without knowing their name in advance.
 
 !!! example
 	```js
-	var handle = plman.GetActivePlaylistFocusItem();
+	var handle = fb.GetFocusItem();
 
 	var obj = {};
 	var f = handle.GetFileInfo();

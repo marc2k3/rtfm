@@ -1,12 +1,12 @@
 This will be used in the examples below:
 
 ```js
-var handle = plman.GetActivePlaylistFocusItem();
+var handle = fb.GetFocusItem();
 ```
 
 !!! note
 	In real world code, you should alaways check the return
-	values from methods like [plman.GetActivePlaylistFocusItem](../namespaces/plman.md#plmangetactiveplaylistfocusitem) and
+	values from methods like [fb.GetFocusItem](../namespaces/fb.md#fbgetfocusitem) and
 	[playback.GetNowPlaying](../namespaces/playback.md#playbackgetnowplaying) are not `null`.
 
 **Properties**

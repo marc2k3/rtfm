@@ -11,7 +11,7 @@ var handle_list = fb.CreateHandleList();
 
 If you need to create a handle list from a single handle, you can do this...
 ```js
-var handle = plman.GetActivePlaylistFocusItem();
+var handle = fb.GetFocusItem();
 if (handle) {
 	var handle_list = fb.CreateHandleList(handle);
 }

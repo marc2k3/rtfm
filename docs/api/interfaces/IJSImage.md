@@ -71,7 +71,7 @@ Returns a `VBArray` so you need to use `.toArray()` on the result.
 		}
 
 		arr = [];
-		var metadb = plman.GetActivePlaylistFocusItem();
+		var metadb = fb.GetFocusItem();
 		if (metadb) {
 			img = metadb.GetAlbumArt();
 

@@ -37,7 +37,7 @@ $font(Twemoji Mozilla,16)$country_flag(%country%)
 	refresh();
 
 	function refresh() {
-		var item = plman.GetActivePlaylistFocusItem();
+		var item = fb.GetFocusItem();
 		if (item) {
 			str = tfo.EvalWithMetadb(item);
 		} else {

@@ -34,7 +34,11 @@ Returns a `string`.
 
 !!! example
 	```js
-	var artist = tfo.EvalWithMetadb(plman.GetActivePlaylistFocusItem());
+	var item = fb.GetFocusItem();
+
+	if (item) {
+		var artist = tfo.EvalWithMetadb(item);
+	}
 	```
 
 !!! note
