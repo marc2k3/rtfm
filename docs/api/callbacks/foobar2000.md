@@ -73,10 +73,8 @@ Called when output device changes.
 ## `on_playback_dynamic_info()`
 Called when dynamic info such as VBR bitrate changes.
 
-## `on_playback_dynamic_info_track(type)`
-|Arguments|||
-|---|---|---|
-|type|`number`|`0` stream metadata update, `1` stream album art update|
+## `on_playback_dynamic_info_track()`
+Called when stream metadata changes.
 
 ## `on_playback_edited(handle)`
 |Arguments|||
@@ -171,5 +169,8 @@ Called when
 
 ## `on_selection_changed()`
 Called when selection changes based on `File>Preferences>Display>Selection viewers`.
+
+## `on_stream_album_art_change()`
+Called when stream album art changes.
 
 ## `on_volume_change()`

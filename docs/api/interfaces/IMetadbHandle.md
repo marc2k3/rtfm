@@ -59,7 +59,7 @@ Returns an [IJSImage](IJSImage.md) instance or `null` on failure.
 
 !!! note
 	This method can return album art from certain radio streams
-	if the requested type is `Front`. Use [on_playback_dynamic_info_track](../callbacks/foobar2000.md#on_playback_dynamic_info_tracktype)
+	if the requested type is `Front`. Use [on_stream_album_art_change](../callbacks/foobar2000.md#on_stream_album_art_change)
 	to get notified of stream artwork changes.
 
 !!! example
