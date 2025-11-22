@@ -1,3 +1,5 @@
+# console
+
 **Methods**
 
 ## `console.GetLines([with_timestamp])`

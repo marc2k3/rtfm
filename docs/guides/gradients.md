@@ -1,3 +1,5 @@
+# Gradients
+
 !!! note
 	`gr` on this page refers to [IJSGraphics](../api/interfaces/IJSGraphics.md)
 

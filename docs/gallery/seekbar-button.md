@@ -1,3 +1,5 @@
+# Seekbars + Buttons
+
 ![seekbar buttons](../images/seekbar-buttons.png)
 
 !!! note

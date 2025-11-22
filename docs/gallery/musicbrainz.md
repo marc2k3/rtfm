@@ -1,3 +1,5 @@
+# MusicBrainz
+
 !!! note
 	This script requires `MUSICBRAINZ_ARTISTID` or `MUSICBRAINZ ARTIST ID` tags present in
 	your files. It cannot function without them.

@@ -1,3 +1,5 @@
+# Play Log
+
 This logs all plays as playback begins. It supports dynamic artist/titles
 from streams and the title format pattern can be configured from the
 right click menu. Checks are in place to make sure entries are not duplicated.

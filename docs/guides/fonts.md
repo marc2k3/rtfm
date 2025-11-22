@@ -1,3 +1,5 @@
+# Fonts
+
 This page is for working with fonts that are passed to
 [IJSGraphics WriteText](../api/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity),
 [IJSGraphics WriteTextSimple](../api/interfaces/IJSGraphics.md#writetextsimpletext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) and

@@ -1,3 +1,5 @@
+# Tips
+
 - Always check the method arguments for the type/range of values you can supply. Over the years, internal validation has got stricter and errors may be thrown when they were silently ignored before.
 - If anything goes wrong, check the popup window/console. It should tell you where the code is that caused the error.
 - Never call `window.Repaint()` or `window.RepaintRect()` from the `on_size` callback.

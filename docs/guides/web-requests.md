@@ -1,3 +1,5 @@
+# Web Requests
+
 !!! note
 	This is for fetching plain text only. See [utils.DownloadFileAsync](../api/namespaces/utils.md#utilsdownloadfileasyncwindow_id-url-path-verify_image) for downloading binary files or [utils.DownloadImageAsync](../api/namespaces/utils.md#utilsdownloadimageasyncwindow_id-url) for downloading images in memory.
 

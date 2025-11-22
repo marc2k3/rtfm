@@ -1,3 +1,5 @@
+# Last.fm Info
+
 === "Artist"
 	![lastfm artist](../images/lastfm-info.png)
 

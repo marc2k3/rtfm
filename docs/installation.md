@@ -1,3 +1,5 @@
+# Requirements & Installation
+
 ## Requirements
 [foobar2000](https://www.foobar2000.org/) `2.25` or later. `Windows 10` or later.
 

@@ -1,3 +1,5 @@
+# Styling Ranges Of Text
+
 !!! note
 	If any text you pass to `IJSGraphics WriteText` or `utils.CreateTextLayout` contain `$rgb`/`$font` code,
 	any colour/font arrays described on this page will be ignored. Title formatting always take precedence.

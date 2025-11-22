@@ -1,3 +1,5 @@
+# Overview
+
 This component for [foobar2000](https://www.foobar2000.org) is based on [WSH Panel Mod](https://code.google.com/archive/p/foo-wsh-panel-mod/).
 
 It allows the creation of customisable panels that can be written with

@@ -1,3 +1,5 @@
+# VU Meter
+
 ![vu-meter](../images/vu-meter.png)
 
 This was written by `Case` because I have no idea how to the use

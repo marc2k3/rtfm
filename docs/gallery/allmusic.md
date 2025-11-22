@@ -1,3 +1,5 @@
+# Allmusic
+
 === "Allmusic"
 	![allmusic](../images/allmusic.png)
 

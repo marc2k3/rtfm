@@ -1,3 +1,5 @@
+# Smooth Playlist Manager
+
 This was originally created by [Br3tt aka Falstaff](https://www.deviantart.com/br3tt).
 
 ![smooth playlist manager](../images/smooth-playlist-manager.png)

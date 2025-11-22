@@ -1,3 +1,5 @@
+# Properties + Other Info
+
 === "Properties"
 	![properties](../images/properties-other-info-1.png)
 

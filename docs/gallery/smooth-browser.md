@@ -1,3 +1,5 @@
+# Smooth Browser
+
 This was originally created by [Br3tt aka Falstaff](https://www.deviantart.com/br3tt).
 
 === "Grid"

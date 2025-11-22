@@ -1,3 +1,5 @@
+# Album Art
+
 ![album art](../images/album-art.png)
 
 This has full parity with `Default UI` / `Columns UI` panels where:

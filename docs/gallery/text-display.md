@@ -1,3 +1,5 @@
+# Text Display
+
 === "Text only"
 	![text only](../images/text-display-1.png)
 

@@ -1,3 +1,5 @@
+# Text Reader
+
 ![text display](../images/text-reader.png)
 
 Use this for displaying the contents of text files. The

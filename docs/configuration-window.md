@@ -1,3 +1,5 @@
+# Configuration Window
+
 Right click any panel>`Configure` to open the `Configuration Window`.
 
 !!! note

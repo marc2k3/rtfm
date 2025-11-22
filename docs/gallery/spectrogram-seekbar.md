@@ -1,3 +1,5 @@
+# Spectrogram Seekbar
+
 ![specctrogram seekbar](../images/spectrogram-seekbar.png)
 
 This script requires `ffmpeg` to decode the audio track and generate the
