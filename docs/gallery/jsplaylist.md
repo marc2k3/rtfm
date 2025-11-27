@@ -4,12 +4,6 @@ This was originally created by [Br3tt aka Falstaff](https://www.deviantart.com/b
 
 ![jsplaylist](../images/jsplaylist.png)
 
-## Clickable ratings
-!!! note
-	The behaviour of clickable ratings depend on the presence of `foo_playcount`. When installed,
-	`Playback Statistics` will be used. Without it, `RATING` tags are written
-	to your files.
-
 ## Features
 - Full drag/drop including to external panels.
 - Customisable group headers with optional front cover display.
@@ -18,7 +12,7 @@ This was originally created by [Br3tt aka Falstaff](https://www.deviantart.com/b
 - Change colours and fonts in [foobar2000](https://www.foobar2000.org) `Preferences` > `Display` > `DefaultUI` or `ColumsUI`.
 - Alternatively, you can configure independent custom colours from the right click menu.
 - Create custom columns with title formatting and full `$rgb` support.
-- The `MOOD` and `RATING` columns do not support `$rgb` so their colours can be configured independently via the right click menu.
+- The `MOOD` column does not support `$rgb` so the colour can be configured independently via the right click menu.
 - There is a `Enable Dynamic` colour option. Colours are extracted from the album art of the currently playing track. If active, custom colours / `$rgb` are ignored.
 - Playlist specific fields like `%list_index%`, `%list_total%`, `%isplaying%`, `%queue_index%` etc are fully supported.
 - Optional playlist info header.
