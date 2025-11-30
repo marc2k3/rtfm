@@ -3,7 +3,7 @@ site_name = "JScript Panel"
 copyright = "Copyright &copy; 2025 marc2003"
 extra_css = ["stylesheets/extra.css"]
 nav = [
-	{ "Home" = [
+	{ "Overview" = [
 		{ "Overview" = [
 			"index.md"
 		]},
@@ -57,7 +57,7 @@ nav = [
 		{ "Web Requests" = "guides/web-requests.md" },
 	]},
 	{ "Gallery" = [
-		{ "Overview" = [
+		{ "Gallery" = [
 			"gallery/index.md"
 		]},
 		{ "Album Art" = "gallery/album-art.md" },
