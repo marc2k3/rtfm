@@ -1,6 +1,6 @@
 [project]
 site_name = "JScript Panel"
-copyright = "Copyright &copy; 2025 marc2003"
+copyright = "Copyright &copy; 2026 marc2003"
 extra_css = ["stylesheets/extra.css"]
 nav = [
 	{ "Overview" = [
