@@ -10,7 +10,7 @@ Called when `Always On Top` state is changed.
 ## `on_colours_changed()`
 Called when colours are changed via `Default UI` / `Columns UI` preferences.
 
-## `on_console_refresh`
+## `on_console_refresh()`
 Called whenever new messages appear in the [foobar2000](https://www.foobar2000.org) `Console`.
 
 ## `on_cursor_follow_playback_changed(state)`
