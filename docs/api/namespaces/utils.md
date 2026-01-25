@@ -49,7 +49,7 @@ Returns a `string`.
 |---|---|---|
 |from|`string`|
 |to|`string`|
-|overwrite|`boolean`|Default `true`.
+|overwrite|`boolean`|Default `true`.|
 
 Returns a `boolean` value.
 
@@ -58,14 +58,20 @@ Returns a `boolean` value.
 |---|---|---|
 |from|`string`|
 |to|`string`|
-|overwrite|`boolean`|Default `true`.
-|recur|`boolean`|Default `true`. If `false`, only files at the root of the folder are copied.
+|overwrite|`boolean`|Default `true`.|
+|recur|`boolean`|Default `true`. If `false`, only files at the root of the folder are copied.|
 
 Returns a `boolean` value.
 
 ## `utils.CreateFolder(path)`
-Returns `true` on success or if folder already exists. Returns
-`false` if operation fails.
+|Arguments|||
+|---|---|---|
+|path|`string`|
+
+Returns a `boolean` value.
+
+It will be `true` on success or if folder already exists. Returns
+`false` if the operation fails.
 
 Parent folders are created if they don't exist.
 
@@ -81,7 +87,7 @@ Returns an [IJSImage](../interfaces/IJSImage.md) instance.
 |Arguments|||
 |---|---|---|
 |text|`string`|
-|font_str|`string`|See [fonts](../../guides/fonts.md).
+|font_str|`string`|See [fonts](../../guides/fonts.md).|
 |text_alignment|[DWRITE_TEXT_ALIGNMENT](../flags.md#dwrite_text_alignment)|Default `0`.|
 |paragraph_alignment|[DWRITE_PARAGRAPH_ALIGNMENT](../flags.md#dwrite_paragraph_alignment)|Default `0`.|
 |word_wrapping|[DWRITE_WORD_WRAPPING](../flags.md#dwrite_word_wrapping)|Default `0`.|
@@ -518,25 +524,18 @@ was an error opening it.
 	It's preferable to use this when you know the file
 	is `UTF8`. If you're unsure, continue to use [utils.ReadTextFile](#utilsreadtextfilepath-codepage)
 
-## `utils.RemoveFolderRecursive(path[, option])`
-|Arguments|||
-|---|---|---|
-|path|`string`|
-|option|`number`|Default `0` which removes the folder and its contents. Supplying `1` clears the contents but leaves the root folder in place.|
-
-Returns a `boolean` value.
-
 ## `utils.RemovePath(path)`
 |Arguments|||
 |---|---|---|
-|path|`string`|Can be a file or folder. If it's a folder, it must be empty.|
+|path|`string`|Can be a file or folder. If it's a folder, all contents will be removed as well.|
 
-Returns a `boolean` value.
+Returns a `number` to indicate how many files/folders were removed. May be `0` if the `path`
+did not exist or `-1` if some other internal error occurred.
 
 ## `utils.RenamePath(from, to)`
 |Arguments|||
 |---|---|---|
-|from|`string`|Can be a file or folder.
+|from|`string`|Can be a file or folder.|
 |to|`string`|
 
 Returns a `boolean` value.
@@ -548,6 +547,8 @@ Returns a `boolean` value.
 |strip_trailing_periods|`boolean`|Default `false`. Set to `true` if `str` is a folder name.|
 
 Returns a `string`.
+
+Uses the same modern unicode replacements as the `foobar2000` converter/file operations.
 
 !!! example
 	```js
