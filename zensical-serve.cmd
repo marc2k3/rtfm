@@ -1,3 +1,3 @@
 @echo off
-zensical serve
+zensical serve --open
 pause
