@@ -1,9 +1,9 @@
 # Web Requests
 
 !!! note
-	This is for fetching plain text only. See [utils.DownloadFileAsync](../api/namespaces/utils.md#utilsdownloadfileasyncwindow_id-url-path-verify_image) for downloading binary files.
+	This is for fetching plain text only. See [utils.DownloadFileAsync](../api/namespaces/utils.md#utilsdownloadfileasyncurl-path-verify_image) for downloading binary files.
 
-See also: [utils.HTTPRequestAsync](../api/namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-body) and
+See also: [utils.HTTPRequestAsync](../api/namespaces/utils.md#utilshttprequestasynctype-url-user_agent_or_headers-body) and
 [on_http_request_done](../api/callbacks/component.md#on_http_request_donetask_id-success-response_text-status-response_headers).
 
 ## GET requests

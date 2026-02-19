@@ -3,11 +3,11 @@
 ## `on_download_file_done(path, success, error_text)`
 |Arguments|||
 |---|---|---|
-|path|`string`|The path that was originally supplied to [utils.DownloadFileAsync](../namespaces/utils.md#utilsdownloadfileasyncwindow_id-url-path-verify_image).|
+|path|`string`|The path that was originally supplied to [utils.DownloadFileAsync](../namespaces/utils.md#utilsdownloadfileasyncurl-path-verify_image).|
 |success|`boolean`|If `true` it means the web request was succesful and the file was saved correctly.|
 |error_text|`string`|Empty if success is `true`. If success is `false`, it should describe what went wrong.|
 
-Called when thread created by [utils.DownloadFileAsync](../namespaces/utils.md#utilsdownloadfileasyncwindow_id-url-path-verify_image) is done.
+Called when thread created by [utils.DownloadFileAsync](../namespaces/utils.md#utilsdownloadfileasyncurl-path-verify_image) is done.
 
 ## `on_get_album_art_done(handle, art_id, image)`
 |Arguments|||
@@ -16,28 +16,28 @@ Called when thread created by [utils.DownloadFileAsync](../namespaces/utils.md#u
 |art_id|`number`|
 |image|[IJSImage](../interfaces/IJSImage.md)|Could be `null` on failure.|
 
-Called when thread created by [IMetadbHandle GetAlbumArtAsync](../interfaces/IMetadbHandle.md#getalbumartasyncwindow_id-art_id) or [IMetadbHandle GetAlbumArtThumbAsync](../interfaces/IMetadbHandle.md#getalbumartthumbasyncwindow_id-art_id-max_size) is done.
+Called when thread created by [IMetadbHandle GetAlbumArtAsync](../interfaces/IMetadbHandle.md#getalbumartasyncart_id) or [IMetadbHandle GetAlbumArtThumbAsync](../interfaces/IMetadbHandle.md#getalbumartthumbasyncart_id-max_size) is done.
 
 ## `on_http_request_done(task_id, success, response_text, status, response_headers)`
 |Arguments|||
 |---|---|---|
-|task_id|`number`|The return value from the original [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-body) call.|
+|task_id|`number`|The return value from the original [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasynctype-url-user_agent_or_headers-body) call.|
 |success|`boolean`|If `true`, it doesn't necessarily mean `HTTP` status `200` but it indicates the request was completed succesfully so the `response text` is from the server.|
 |response_text|`string`|
 |status|`number`|Will be `0` if the server was unreachable otherwise it should be the `HTTP` status code.|
 |response_headers|`string`|This is a stringified `JSON` object so you need to use `JSON.parse` to access it. It's only valid if `success` was `true`.|
 
-Called when thread created by [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasyncwindow_id-type-url-user_agent_or_headers-body) is done.
+Called when thread created by [utils.HTTPRequestAsync](../namespaces/utils.md#utilshttprequestasynctype-url-user_agent_or_headers-body) is done.
 
 See [Web Requests](../../guides/web-requests.md) for examples.
 
 ## `on_locations_added(task_id, handle_list)`
 |Arguments|||
 |---|---|---|
-|task_id|`number`|The return value from the original [fb.AddLocationsAsync](../namespaces/fb.md#fbaddlocationsasyncwindow_id-paths) call.|
+|task_id|`number`|The return value from the original [fb.AddLocationsAsync](../namespaces/fb.md#fbaddlocationsasyncpaths) call.|
 |handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
 
-Called when thread created by [fb.AddLocationsAsync](../namespaces/fb.md#fbaddlocationsasyncwindow_id-paths) is done.
+Called when thread created by [fb.AddLocationsAsync](../namespaces/fb.md#fbaddlocationsasyncpaths) is done.
 
 ## `on_main_menu(index)`
 |Arguments|||
@@ -77,11 +77,6 @@ what other users may already be using.
 |info|`string`, `number`, `array`, `object`|
 
 Called in other panels after [window.NotifyOthers](../namespaces/window.md#windownotifyothersname-info) is executed.
-
-## `on_run_cmd_async_done(task_id)`
-|Arguments|||
-|---|---|---|
-|task_id|`number`|The return value from the original [utils.RunCmdAsync](../namespaces/utils.md#utilsruncmdasyncwindow_id-app-params) call.|
 
 ## `on_script_unload()`
 Should always be called when:

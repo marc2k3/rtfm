@@ -314,7 +314,7 @@ Returns a `string`.
 |body|`string`|This is ignored for `GET` requests and can be omitted. It is required for `POST` requests. It could be form data or a stringified `JSON` object/array.|
 
 !!! note
-	This is for fetching plain text only. See [utils.DownloadFileAsync](#utilsdownloadfileasyncwindow_id-url-path-verify_image) for downloading binary files.
+	This is for fetching plain text only. See [utils.DownloadFileAsync](#utilsdownloadfileasyncurl-path-verify_image) for downloading binary files.
 
 Returns a unique `task_id` which is used as the first argument in
 the [on_http_request_done](../callbacks/component.md#on_http_request_donetask_id-success-response_text-status-response_headers) callback.
@@ -560,19 +560,6 @@ No return value.
 		utils.Run('explorer', '/select,"' + file + '"');
 	}
 	```
-
-## `utils.RunCmdAsync(app, params)`
-|Arguments|||
-|---|---|---|
-|app|`string`|
-|params|`string`|
-
-Returns a unique `task_id` which is used as the first argument in
-the [on_run_cmd_async_done](../callbacks/component.md#on_run_cmd_async_donetask_id) callback.
-
-This is for launching command line tools only and they will run in background threads.
-You'll get notified when complete. The callback will not be called
-if supplied with a bad `app` argument.
 
 ## `utils.SetClipboardText(text)`
 |Arguments|||
