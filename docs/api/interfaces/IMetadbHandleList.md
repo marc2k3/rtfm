@@ -39,11 +39,11 @@ No return value.
 
 No return value.
 
-## `AttachImage(image_path[, art_id])`
+## `AttachImage(image_path art_id)`
 |Arguments|||
 |---|---|---|
 |image_path|`string`|
-|art_id|[AlbumArtId](../flags.md#albumartid)|Default `0`.|
+|art_id|[AlbumArtId](../flags.md#albumartid)|
 
 No return value.
 
@@ -322,10 +322,10 @@ No return value.
 AND `two`. The order of items in `one` will be randomised.
 `two` should be untouched.
 
-## `OptimiseFileLayout([minimise])`
+## `OptimiseFileLayout(minimise)`
 |Arguments|||
 |---|---|---|
-|minimise|`boolean`|Default `false`.|
+|minimise|`boolean`|
 
 No return value.
 
@@ -340,10 +340,10 @@ No return value.
 ## `RemoveAll()`
 No return value.
 
-## `RemoveAttachedImage([art_id])`
+## `RemoveAttachedImage(art_id)`
 |Arguments|||
 |---|---|---|
-|art_id|[AlbumArtId](../flags.md#albumartid)|Default `0`.|
+|art_id|[AlbumArtId](../flags.md#albumartid)|
 
 No return value.
 
