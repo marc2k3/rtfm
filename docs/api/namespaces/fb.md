@@ -105,16 +105,6 @@ Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
 
 Returns an [IMainMenuManager](../interfaces/IMainMenuManager.md) instance.
 
-## `fb.EnableAdvancedLogging()`
-No return value.
-
-Only enable this if you're having problems diagnosing your own script errors. The setting persists
-until `foobar2000` is closed. To disable this advanced logging, remove this method and restart
-`foobar2000`.
-
-Console messages will point directly at the `C++` source code and this is something that you can
-ask about in the [main support thread](https://hydrogenaud.io/index.php/topic,110499.0.html).
-
 ## `fb.EnumerateMainMenuCommands()`
 Returns a `JSON` array in string form so you need to use `JSON.parse` on the result.
 
@@ -161,11 +151,6 @@ Returns an [IJSImage](../interfaces/IJSImage.md) instance or `null` on failure.
 |offset|`number`|Default `0`|
 
 Returns an [IAudioChunk](../interfaces/IAudioChunk.md) instance or `null` on failure.
-
-`get_absolute_time` and `get_chunk_absolute` and their arguments are described here:
-
-[https://github.com/marc2k3/foobar2000-sdk/blob/main/foobar2000/SDK/vis.h](https://github.com/marc2k3/foobar2000-sdk/blob/main/foobar2000/SDK/vis.h)
-
 
 ## `fb.GetClipboardContents()`
 Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
