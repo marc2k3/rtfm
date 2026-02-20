@@ -4,7 +4,7 @@
 |---|---|---|---|
 |ChannelConfig|`number`|
 |ChannelCount|`number`|
-|Data|`VBArray`|You need to use `toArray()` on this before using.
+|Data|`array`|
 |SampleCount|`number`|
 |SampleRate|`number`|
 
@@ -23,7 +23,7 @@
 		// chunk.SampleCount
 		// chunk.Data
 
-		var data = chunk.Data.toArray();
+		var data = chunk.Data
 
 		var channel_count = chunk.ChannelCount;
 		for (var i = 0; i < data.length; i += channel_count) {

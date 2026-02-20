@@ -1,8 +1,6 @@
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	// Click anywhere to open menu and change background colour.
 
@@ -26,7 +24,6 @@
 		menu.CheckMenuRadioItem(1, 3, colour_index + 1);
 
 		var idx = menu.TrackPopupMenu(x, y);
-		menu.Dispose();
 
 		switch (idx) {
 			case 0:

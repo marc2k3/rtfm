@@ -1,13 +1,9 @@
 All of these are provided in `helpers.txt` bundled with the component. You
-can import it like this.
+can include it for use in any script like this.
 
 ```
-// ==PREPROCESSOR==
-// @import "%fb2k_component_path%helpers.txt"
-// ==/PREPROCESSOR==
+include(fb.ComponentPath + 'helpers.txt');
 ```
-
-See [Preprocessors](../preprocessors.md).
 
 ## DWRITE_FONT_WEIGHT
 ```js

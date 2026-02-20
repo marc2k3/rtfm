@@ -78,12 +78,7 @@ No return value.
 	Mask images don't have to have the same width/height.
 
 	```js
-
-	// ==PREPROCESSOR==
-	// @name "DrawImageWithMask"
-	// @author "marc2003"
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	var temp_gr;
 

@@ -33,6 +33,13 @@ No return value.
 	```
 
 ## `Deactivate()`
+No return value.
+
+## `SetFont(font_name[, font_size_px])`
+|Arguments|||
+|---|---|---|
+|font_name|`string`|
+|font_size_px|`number`|Default `16`.
 
 No return value.
 

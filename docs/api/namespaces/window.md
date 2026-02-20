@@ -12,7 +12,7 @@
 |window.MaxWidth|`number`|read, write|
 |window.MinHeight|`number`|read, write|
 |window.MinWidth|`number`|read, write|
-|[window.Name](../../preprocessors.md#name)|`string`|read|
+|[window.Name]|`string`|read|Script name that was suuplied to `window.DefineScript`.
 |window.Width|`number`|read|
 
 **Methods**
@@ -42,10 +42,8 @@ Returns an [IMenuObj](../interfaces/IMenuObj.md) instance.
 
 Returns an [ITooltip](../interfaces/ITooltip.md) instance.
 
-!!! note
-	Since it's not permitted to call this more than once
-	in a panel, see the additional [window.SetTooltipFont](#windowsettooltipfontfont_name-font_size_px)
-	method too.
+## window.DefineScript(name[, options])
+/// TODO
 
 ## `window.GetUIColour(type)`
 |Arguments|||
@@ -73,11 +71,7 @@ stored and returned.
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @name "ColourPicker + Persistent Properties"
-	// @author "marc2003"
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	var default_colour = RGB(255, 0, 0);
 
@@ -230,14 +224,6 @@ to cancel it.
 		// code here will run after 10 seconds, once.
 	}, 10000);
 	```
-
-## `window.SetTooltipFont(font_name, font_size_px)`
-|Arguments|||
-|---|---|---|
-|font_name|`string`|
-|font_size_px|`number`|
-
-No return value.
 
 ## `window.ShowConfigure()`
 

@@ -247,6 +247,10 @@ Use this to determine the type(s) of locks applied to the specified playlist.
 For convenience, these methods are included in `helpers.txt`.
 
 ```js
+
+
+
+
 function playlist_can_add_items(playlistIndex) {
 	return !(plman.GetPlaylistLockFilterMask(playlistIndex) & PlaylistLockFilterMask.filter_add);
 }
@@ -552,7 +556,7 @@ No return value.
 This selects playlist items in a similar manner to
 the `foobar2000` native playlist search.
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 ## `plman.SetActivePlaylistContext()`
 No return value.

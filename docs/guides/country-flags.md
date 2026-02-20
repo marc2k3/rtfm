@@ -24,9 +24,7 @@ $font(Twemoji Mozilla,16)$country_flag(%country%)
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	// $font() with no args resets back to the default_font supplied to
 	// DrawStyledText in on_paint
@@ -71,9 +69,7 @@ which accepts a 2 letter country code or the full country name. See
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	var font = CreateFontString("Twemoji Mozilla", 24);
 	var flag = utils.GetCountryFlag("GB");

@@ -23,7 +23,7 @@
 
 **Methods**
 ## `playback.GetActiveDSPs()`
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 ## `playback.GetDSPPresets()`
 Returns a `JSON` array in string form so you need to use `JSON.parse` on the result.
@@ -63,7 +63,7 @@ Returns an [IMetadbHandle](../interfaces/IMetadbHandle.md) instance.
 Now playing item or `null` if [foobar2000](https://www.foobar2000.org) isn't playing.
 
 ## `playback.GetOrderNames()`
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 This is an array of playback order names which can be iterated
 or used with `playback.Order`.
@@ -71,12 +71,12 @@ or used with `playback.Order`.
 !!! example
 	=== "Current"
 		```js
-		console.log(playback.GetOrderNames().toArray()[playback.Order]);
+		console.log(playback.GetOrderNames()[playback.Order]);
 		```
 
 	=== "Loop"
 		```js
-		var arr = playback.GetOrderNames().toArray();
+		var arr = playback.GetOrderNames();
 		for (var i = 0; i < arr.length; i++) {
 			console.log(arr[i]);
 		}

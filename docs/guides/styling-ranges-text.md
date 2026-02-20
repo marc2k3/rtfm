@@ -14,11 +14,7 @@ the `utils.CreateTextLayout` examples below.
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @name "WriteTextStyles"
-	// @author "marc2003"
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	/*
 	This sample splits a string in to whole words and then randomly
@@ -27,7 +23,7 @@ the `utils.CreateTextLayout` examples below.
 	how the start value is incremented for each word.
 	*/
 
-	var installed_fonts = utils.ListFonts().toArray();
+	var installed_fonts = utils.ListFonts();
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
 	var colour_string = '';
@@ -83,11 +79,7 @@ This example demonstrates scrollable text, a single font and a different colour 
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @name "SimpleScroll + Coloured Text"
-	// @author "marc2003"
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	// see CreateFontString in helpers.txt
 	var font = CreateFontString('Segoe UI', 24);
@@ -152,13 +144,9 @@ This example demonstrates scrollable text, per-word colouring and per-word fonts
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @name "SimpleScroll + Styled Text"
-	// @author "marc2003"
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
-	var installed_fonts = utils.ListFonts().toArray();
+	var installed_fonts = utils.ListFonts();
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 	var layout = null;
 	var offset = 0;

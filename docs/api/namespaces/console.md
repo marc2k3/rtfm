@@ -10,7 +10,7 @@ No return value.
 |---|---|---|
 |with_timestamp|`boolean`|Default `false`.|
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 Use in conjunction with [on_console_refresh](../callbacks/foobar2000.md#on_console_refresh).
 

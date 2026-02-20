@@ -50,11 +50,11 @@ Returns a `string`.
 |---|---|---|
 |handle_list|[IMetadbHandleList](IMetadbHandleList.md)|
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 !!! example
 	```js
 	var handle_list = fb.GetLibraryItems();
-	var artists = tfo.EvalWithMetadbs(handle_list).toArray();
+	var artists = tfo.EvalWithMetadbs(handle_list);
 	console.log(handle_list.Count === artists.length); // True
 	```

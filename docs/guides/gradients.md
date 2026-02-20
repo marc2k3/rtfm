@@ -87,9 +87,7 @@ For a diagonal effect, you can do something like this:
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	var stops = [
 		[0, RGB(255, 0, 0)],

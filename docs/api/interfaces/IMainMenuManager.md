@@ -18,9 +18,7 @@ Returns a `boolean` value.
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	// Click anywhere in the panel to open the menu.
 
@@ -55,7 +53,6 @@ Returns a `boolean` value.
 		help_popup.AppendTo(menu, MF_STRING, 'Help');
 
 		var idx = menu.TrackPopupMenu(x, y);
-		menu.Dispose();
 
 		switch (true) {
 		case idx == 0:
@@ -79,12 +76,5 @@ Returns a `boolean` value.
 			help.ExecuteByID(idx - 6000);
 			break;
 		}
-
-		file.Dispose();
-		edit.Dispose();
-		view.Dispose();
-		playback.Dispose();
-		library.Dispose();
-		help.Dispose();
 	}
 	```

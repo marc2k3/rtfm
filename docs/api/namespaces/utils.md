@@ -101,11 +101,7 @@ you can supply a vertical offset.
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @name "SimpleScroll"
-	// @author "marc2003"
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	var font = CreateFontString('Segoe UI', 20);
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
@@ -291,11 +287,11 @@ Returns a `number`.
 |exc_mask|[FILE_ATTRIBUTE](../flags.md#file_attribute)|Default `FILE_ATTRIBUTE_DIRECTORY`.|
 |inc_mask|[FILE_ATTRIBUTE](../flags.md#file_attribute)|Default `0xffffffff`.|
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 !!! example
 	```js
-	var arr = utils.Glob("C:\\Pictures\\*.jpg").toArray();
+	var arr = utils.Glob("C:\\Pictures\\*.jpg");
 	```
 
 ## `utils.HashString(str)`
@@ -385,7 +381,7 @@ Returns a `boolean` value.
 |folder|`string`|
 |recursive|`boolean`|Default `false`.|
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 ## `utils.ListFolders(folder[, recursive])`
 |Arguments|||
@@ -393,10 +389,10 @@ Returns a `VBArray` so you need to use `.toArray()` on the result.
 |folder|`string`|
 |recursive|`boolean`|Default `false`.|
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 ## `utils.ListFonts()`
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 ## `utils.LoadBitmap(path[, max_size])`
 |Arguments|||
@@ -425,9 +421,7 @@ Returns a [MessageBox Return Value](../flags.md#messagebox-return-values).
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	var prompt = "Do you really want to open the Preferences?";
 	var title = "A very important question";

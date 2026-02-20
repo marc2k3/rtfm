@@ -21,7 +21,6 @@ using this to free up memory.
 
 	function update_bitmap() {
 		if (g_bitmap) {
-			g_bitmap.Dispose();
 			g_bitmap = null;
 		}
 
@@ -31,7 +30,6 @@ using this to free up memory.
 			var image = handle.GetAlbumArt(0); // 0 = front
 			if (image) {
 				g_bitmap = image.CreateBitmap();
-				image.Dispose();
 			}
 		}
 	}
@@ -54,7 +52,7 @@ No return value.
 |---|---|---|
 |count|`number`|
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 !!! example
 	```js
@@ -66,7 +64,6 @@ Returns a `VBArray` so you need to use `.toArray()` on the result.
 
 	function on_item_focus_change() {
 		if (img) {
-			img.Dispose();
 			img = null;
 		}
 
@@ -76,7 +73,7 @@ Returns a `VBArray` so you need to use `.toArray()` on the result.
 			img = metadb.GetAlbumArt();
 
 			if (img) {
-				arr = img.GetColourScheme(10).toArray();
+				arr = img.GetColourScheme(10);
 			}
 		}
 		window.Repaint();
@@ -126,11 +123,7 @@ No return value.
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @name "StackBlur (image)"
-	// @author "marc2003"
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	var img = utils.LoadImage(fb.ComponentPath + 'samples\\images\\1.webp');
 	var blur_img = null;
@@ -139,7 +132,6 @@ No return value.
 	StackBlur(radius);
 
 	function StackBlur(radius) {
-		if (blur_img) blur_img.Dispose();
 		blur_img = img.Clone();
 		blur_img.StackBlur(radius);
 	}

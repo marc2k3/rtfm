@@ -60,7 +60,6 @@ no need to remove it first.
 		var image_path = "C:\\path\\to\\image.jpg";
 		handle_list.AttachImage(image_path, 0);
 	}
-	handle_list.Dispose();
 	```
 
 ## `AttachImage2(image[, art_id, format])`
@@ -98,7 +97,6 @@ Returns a `boolean` value.
 		```js
 		var handle_list = plman.GetPlaylistSelectedItems(plman.ActivePlaylist);
 		handle_list.CopyToClipboard();
-		handle_list.Dispose();
 		```
 
 	=== "Cut playlist items"
@@ -124,7 +122,6 @@ Returns a `boolean` value.
 				plman.UndoBackup(ap);
 				plman.RemovePlaylistSelection(ap);
 			}
-			handle_list.Dispose();
 		}
 		```
 
@@ -169,8 +166,7 @@ Returns an [IMetadbHandle](IMetadbHandle.md) instance.
 	```
 
 ## `GetLibraryRelativePaths()`
-
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 This is useful for creating an `Album List` like script in
 `folder structure` mode where you'd like the monitored music
@@ -188,7 +184,7 @@ folder removed from the path of each handle list item.
 	```js
 	var handle_list = fb.GetLibraryItems();
 	handle_list.SortByRelativePath();
-	var relative_paths = handle_list.GetLibraryRelativePaths().toArray();
+	var relative_paths = handle_list.GetLibraryRelativePaths();
 	console.log(relative_paths[0]);
 	// Albums\Artist\Some Album\Some Song.flac
 	```
@@ -248,14 +244,14 @@ Returns an [IMetadbHandleList](IMetadbHandleList.md) instance.
 |---|---|---|
 |tag|`string`|
 
-Returns a `VBArray` so you need to use `.toArray()` on the result.
+Returns an array.
 
 The allows library viewers to cater for multiple value tags.
 
 !!! example
 	```js
 	var items = fb.GetLibraryItems();
-	var arr = items.GroupByTag('artist').toArray();
+	var arr = items.GroupByTag('artist');
 
 	// note the +=2 here
 	// even elements are the tag value
@@ -506,7 +502,6 @@ You must supply a stringifed `array` or `object` as per these examples:
 		var str = JSON.stringify(arr);
 
 		handle_list.UpdateFileInfoFromJSON(str);
-		handle_list.Dispose();
 		```
 
 	=== "Object"
@@ -523,7 +518,6 @@ You must supply a stringifed `array` or `object` as per these examples:
 
 		var str = JSON.stringify(obj);
 		handle_list.UpdateFileInfoFromJSON(str);
-		handle_list.Dispose();
 		```
 
 You can use blank values to clear any existing tags.

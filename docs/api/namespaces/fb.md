@@ -96,7 +96,6 @@ Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
 	var handle_list = fb.CreateHandleList(handle);
 	var image_path = ...
 	handle_list.AttachImage(image_path, 0);
-	handle_list.Dispose();
 	```
 
 ## `fb.CreateMainMenuManager(root_name)`
@@ -176,30 +175,26 @@ other components, a file selection from Explorer, etc.
 
 !!! example
 	```js
-	// ==PREPROCESSOR==
-	// @import "%fb2k_component_path%helpers.txt"
-	// ==/PREPROCESSOR==
+	include(fb.ComponentPath + 'helpers.txt');
 
 	function on_mouse_rbtn_up(x, y) {
 		var ap = plman.ActivePlaylist;
 
-		// playlist_can_add_items is defined in helpers.txt, it uses
+		// PlaylistCanAddItems is defined in helpers.txt, it uses
 		// plman.GetPlaylistLockFilterMask to determine if the active playlist
 		// permits adding items
 		// MF_STRING and MF_GRAYED are also defined there.
 
-		var can_paste_flag = playlist_can_add_items(ap) && fb.CheckClipboardContents() ? MF_STRING : MF_GRAYED;
+		var can_paste_flag = PlaylistCanAddItems(ap) && fb.CheckClipboardContents() ? MF_STRING : MF_GRAYED;
 
 		var menu = window.CreatePopupMenu();
 		menu.AppendMenuItem(can_paste_flag, 1, "Paste");
 
 		var idx = menu.TrackPopupMenu(x, y);
-		menu.Dispose();
 
 		if (idx == 1) {
 			var handle_list = fb.GetClipboardContents();
 			plman.InsertPlaylistItems(ap, plman.GetPlaylistItemCount(ap), handle_list);
-			handle_list.Dispose();
 		}
 
 		return true;

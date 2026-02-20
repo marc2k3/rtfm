@@ -10,7 +10,6 @@ nav = [
 		{ "Requirements & Installation" = "installation.md" },
 		{ "Configuration Window" = "configuration-window.md" },
 		{ "Tips" = "tips.md" },
-		{ "Preprocessors" = "preprocessors.md" },
 	]},
 	{ "API" = [
 		{ "API" = [

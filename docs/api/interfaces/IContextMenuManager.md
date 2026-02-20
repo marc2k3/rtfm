@@ -51,8 +51,5 @@ No return value.
 		if (idx > 0) {
 			context.ExecuteByID(idx - 1);
 		}
-
-		menu.Dispose();
-		context.Dispose();
 	}
 	```
