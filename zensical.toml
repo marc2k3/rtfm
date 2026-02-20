@@ -60,13 +60,11 @@ nav = [
 			"gallery/index.md"
 		]},
 		{ "Album Art" = "gallery/album-art.md" },
-		{ "Allmusic" = "gallery/allmusic.md" },
 		{ "Images" = "gallery/images.md" },
 		{ "JS Playlist" = "gallery/jsplaylist.md" },
 		{ "Last.fm Bio" = "gallery/lastfm-bio.md" },
 		{ "Last.fm Info" = "gallery/lastfm-info.md" },
 		{ "MusicBrainz" = "gallery/musicbrainz.md" },
-		{ "Play Log" = "gallery/play-log.md" },
 		{ "Properties + Other Info" = "gallery/properties-other-info.md" },
 		{ "Seekbars + Buttons" = "gallery/seekbar-button.md" },
 		{ "Smooth Browser" = "gallery/smooth-browser.md" },
