@@ -5,7 +5,7 @@ This component for [foobar2000](https://www.foobar2000.org) is based on `JScript
 It allows the creation of customisable panels that can be written with
 `JavaScript` rather than the `C++` required by the [foobar2000 SDK](https://www.foobar2000.org/SDK).
 
-Under the hood, it uses the `Spider Monkey` engine (102.10esr) taken from `Spider Monkey Panel`
+Under the hood, it uses the `Spider Monkey` engine (`102.12esr`) taken from `Spider Monkey Panel`
 but all graphics rendering is `Direct2D` taken from `JScript Panel 3`. Also, all API
 design choices are my own from `JScript Panel 3`. Everything I hated about `Spider Monkey Panel`
 like the package manager and html dialog have been removed. Also, there is zero `ActiveX`
