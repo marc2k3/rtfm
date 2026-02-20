@@ -7,7 +7,3 @@ See [utils.CreateTextLayout](../namespaces/utils.md#utilscreatetextlayouttext-fo
 |max_width|`number`|
 
 Returns a `number`.
-
-## `Dispose()`
-
-No return value.

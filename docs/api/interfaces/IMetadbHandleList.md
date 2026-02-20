@@ -143,9 +143,6 @@ It will be a copy of the original handle list with `count` handles removed
 from the beginning. If the supplied `count` exceeds the handle list count,
 an empty handle list will be returned.
 
-## `Dispose()`
-No return value.
-
 ## `Find(handle)`
 |Arguments|||
 |---|---|---|

@@ -8,10 +8,6 @@
 
 No return value.
 
-## `Dispose()`
-
-No return value.
-
 ## `ExecuteByID(id)`
 |Arguments|||
 |---|---|---|

@@ -83,9 +83,6 @@ No return value.
 
 No return value.
 
-## `Dispose()`
-No return value.
-
 ## `SetDefault(item_id)`
 |Arguments|||
 |---|---|---|

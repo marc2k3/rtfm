@@ -45,10 +45,6 @@ Returns a `boolean` value.
 	}
 	```
 
-## `Dispose()`
-
-No return value.
-
 ## `GetAlbumArt([art_id, want_stub])`
 |Arguments|||
 |---|---|---|

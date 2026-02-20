@@ -72,7 +72,6 @@ nav = [
 		{ "Smooth Browser" = "gallery/smooth-browser.md" },
 		{ "Smooth Playlist" = "gallery/smooth-playlist.md" },
 		{ "Smooth Playlist Manager" = "gallery/smooth-playlist-manager.md" },
-		{ "Spectrogram Seekbar" = "gallery/spectrogram-seekbar.md" },
 		{ "Text Display" = "gallery/text-display.md" },
 		{ "Text Reader" = "gallery/text-reader.md" },
 		{ "Thumbs" = "gallery/thumbs.md" },

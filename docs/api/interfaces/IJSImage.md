@@ -12,8 +12,7 @@
 Returns an `IJSImage` instance.
 
 ## `CreateBitmap()`
-Return an [IJSBitmap](IJSBitmap.md) instance. You may consider using `Dispose()` immediately after
-using this to free up memory.
+Return an [IJSBitmap](IJSBitmap.md) instance.
 
 !!! example
 	```js
@@ -36,9 +35,6 @@ using this to free up memory.
 	```
 
 See also: [utils.LoadBitmap](../namespaces/utils.md#utilsloadbitmappath-max_size).
-
-## `Dispose()`
-No return value.
 
 ## `FlipRotate(options)`
 |Arguments|||

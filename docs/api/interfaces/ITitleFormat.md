@@ -6,12 +6,7 @@ var tfo = fb.TitleFormat("%artist%");
 
 **Methods**
 
-## `Dispose()`
-
-No return value.
-
 ## `Eval()`
-
 Returns a `string`. It will be empty if [foobar2000](https://www.foobar2000.org) is not playing.
 
 ## `EvalPlaylistItem(playlistIndex, playlistItemIndex)`

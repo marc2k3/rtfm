@@ -77,10 +77,6 @@ without knowing their name in advance.
 
 **Methods**
 
-## `Dispose()`
-
-No return value.
-
 ## `InfoFind(name)`
 |Arguments|||
 |---|---|---|

@@ -12,8 +12,3 @@
 |---|---|---|---|
 |Height|`number`|read|
 |Width|`number`|read|
-
-**Methods**
-
-## `Dispose()`
-No return value.
