@@ -106,3 +106,6 @@ link = "https://github.com/marc2k3"
 
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
+
+[project.markdown_extensions.toc]
+permalink = "#"
