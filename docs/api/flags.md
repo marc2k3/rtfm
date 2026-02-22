@@ -7,229 +7,229 @@ include(fb.ComponentPath + 'helpers.txt');
 
 ## DWRITE_FONT_WEIGHT
 ```js
-var DWRITE_FONT_WEIGHT_THIN = 100;
-var DWRITE_FONT_WEIGHT_EXTRA_LIGHT = 200;
-var DWRITE_FONT_WEIGHT_ULTRA_LIGHT = 200;
-var DWRITE_FONT_WEIGHT_LIGHT = 300;
-var DWRITE_FONT_WEIGHT_SEMI_LIGHT = 350;
-var DWRITE_FONT_WEIGHT_NORMAL = 400;
-var DWRITE_FONT_WEIGHT_REGULAR = 400;
-var DWRITE_FONT_WEIGHT_MEDIUM = 500;
-var DWRITE_FONT_WEIGHT_DEMI_BOLD = 600;
-var DWRITE_FONT_WEIGHT_SEMI_BOLD = 600;
-var DWRITE_FONT_WEIGHT_BOLD = 700;
-var DWRITE_FONT_WEIGHT_EXTRA_BOLD = 800;
-var DWRITE_FONT_WEIGHT_ULTRA_BOLD = 800;
-var DWRITE_FONT_WEIGHT_BLACK = 900;
-var DWRITE_FONT_WEIGHT_HEAVY = 900;
-var DWRITE_FONT_WEIGHT_EXTRA_BLACK = 950;
-var DWRITE_FONT_WEIGHT_ULTRA_BLACK = 950;
+const DWRITE_FONT_WEIGHT_THIN = 100;
+const DWRITE_FONT_WEIGHT_EXTRA_LIGHT = 200;
+const DWRITE_FONT_WEIGHT_ULTRA_LIGHT = 200;
+const DWRITE_FONT_WEIGHT_LIGHT = 300;
+const DWRITE_FONT_WEIGHT_SEMI_LIGHT = 350;
+const DWRITE_FONT_WEIGHT_NORMAL = 400;
+const DWRITE_FONT_WEIGHT_REGULAR = 400;
+const DWRITE_FONT_WEIGHT_MEDIUM = 500;
+const DWRITE_FONT_WEIGHT_DEMI_BOLD = 600;
+const DWRITE_FONT_WEIGHT_SEMI_BOLD = 600;
+const DWRITE_FONT_WEIGHT_BOLD = 700;
+const DWRITE_FONT_WEIGHT_EXTRA_BOLD = 800;
+const DWRITE_FONT_WEIGHT_ULTRA_BOLD = 800;
+const DWRITE_FONT_WEIGHT_BLACK = 900;
+const DWRITE_FONT_WEIGHT_HEAVY = 900;
+const DWRITE_FONT_WEIGHT_EXTRA_BLACK = 950;
+const DWRITE_FONT_WEIGHT_ULTRA_BLACK = 950;
 ```
 
 ## DWRITE_FONT_STYLE
 ```js
-var DWRITE_FONT_STYLE_NORMAL = 0;
-var DWRITE_FONT_STYLE_OBLIQUE = 1;
-var DWRITE_FONT_STYLE_ITALIC = 2;
+const DWRITE_FONT_STYLE_NORMAL = 0;
+const DWRITE_FONT_STYLE_OBLIQUE = 1;
+const DWRITE_FONT_STYLE_ITALIC = 2;
 ```
 
 ## DWRITE_FONT_STRETCH
 ```js
-var DWRITE_FONT_STRETCH_ULTRA_CONDENSED = 1;
-var DWRITE_FONT_STRETCH_EXTRA_CONDENSED = 2;
-var DWRITE_FONT_STRETCH_CONDENSED = 3;
-var DWRITE_FONT_STRETCH_SEMI_CONDENSED = 4;
-var DWRITE_FONT_STRETCH_NORMAL = 5;
-var DWRITE_FONT_STRETCH_MEDIUM = 5;
-var DWRITE_FONT_STRETCH_SEMI_EXPANDED = 6;
-var DWRITE_FONT_STRETCH_EXPANDED = 7;
-var DWRITE_FONT_STRETCH_EXTRA_EXPANDED = 8;
-var DWRITE_FONT_STRETCH_ULTRA_EXPANDED = 9;
+const DWRITE_FONT_STRETCH_ULTRA_CONDENSED = 1;
+const DWRITE_FONT_STRETCH_EXTRA_CONDENSED = 2;
+const DWRITE_FONT_STRETCH_CONDENSED = 3;
+const DWRITE_FONT_STRETCH_SEMI_CONDENSED = 4;
+const DWRITE_FONT_STRETCH_NORMAL = 5;
+const DWRITE_FONT_STRETCH_MEDIUM = 5;
+const DWRITE_FONT_STRETCH_SEMI_EXPANDED = 6;
+const DWRITE_FONT_STRETCH_EXPANDED = 7;
+const DWRITE_FONT_STRETCH_EXTRA_EXPANDED = 8;
+const DWRITE_FONT_STRETCH_ULTRA_EXPANDED = 9;
 ```
 
 ## DWRITE_TEXT_ALIGNMENT
 ```js
-var DWRITE_TEXT_ALIGNMENT_LEADING = 0;
-var DWRITE_TEXT_ALIGNMENT_TRAILING = 1;
-var DWRITE_TEXT_ALIGNMENT_CENTER = 2;
-var DWRITE_TEXT_ALIGNMENT_JUSTIFIED = 3;
+const DWRITE_TEXT_ALIGNMENT_LEADING = 0;
+const DWRITE_TEXT_ALIGNMENT_TRAILING = 1;
+const DWRITE_TEXT_ALIGNMENT_CENTER = 2;
+const DWRITE_TEXT_ALIGNMENT_JUSTIFIED = 3;
 ```
 
 ## DWRITE_PARAGRAPH_ALIGNMENT
 ```js
-var DWRITE_PARAGRAPH_ALIGNMENT_NEAR = 0;
-var DWRITE_PARAGRAPH_ALIGNMENT_FAR = 1;
-var DWRITE_PARAGRAPH_ALIGNMENT_CENTER = 2;
+const DWRITE_PARAGRAPH_ALIGNMENT_NEAR = 0;
+const DWRITE_PARAGRAPH_ALIGNMENT_FAR = 1;
+const DWRITE_PARAGRAPH_ALIGNMENT_CENTER = 2;
 ```
 
 ## DWRITE_WORD_WRAPPING
 ```js
-var DWRITE_WORD_WRAPPING_WRAP = 0;
-var DWRITE_WORD_WRAPPING_NO_WRAP = 1;
-var DWRITE_WORD_WRAPPING_EMERGENCY_BREAK = 2;
-var DWRITE_WORD_WRAPPING_WHOLE_WORD = 3;
-var DWRITE_WORD_WRAPPING_CHARACTER = 4;
+const DWRITE_WORD_WRAPPING_WRAP = 0;
+const DWRITE_WORD_WRAPPING_NO_WRAP = 1;
+const DWRITE_WORD_WRAPPING_EMERGENCY_BREAK = 2;
+const DWRITE_WORD_WRAPPING_WHOLE_WORD = 3;
+const DWRITE_WORD_WRAPPING_CHARACTER = 4;
 ```
 
 ## DWRITE_TRIMMING_GRANULARITY
 ```js
-var DWRITE_TRIMMING_GRANULARITY_NONE = 0;
-var DWRITE_TRIMMING_GRANULARITY_CHARACTER = 1;
-var DWRITE_TRIMMING_GRANULARITY_WORD = 2;
+const DWRITE_TRIMMING_GRANULARITY_NONE = 0;
+const DWRITE_TRIMMING_GRANULARITY_CHARACTER = 1;
+const DWRITE_TRIMMING_GRANULARITY_WORD = 2;
 ```
 
 ## WICBitmapTransform
 ```js
-var WICBitmapTransformRotate0 = 0;
-var WICBitmapTransformRotate90 = 1;
-var WICBitmapTransformRotate180 = 2;
-var WICBitmapTransformRotate270 = 3;
-var WICBitmapTransformFlipHorizontal = 8;
-var WICBitmapTransformFlipVertical = 16;
+const WICBitmapTransformRotate0 = 0;
+const WICBitmapTransformRotate90 = 1;
+const WICBitmapTransformRotate180 = 2;
+const WICBitmapTransformRotate270 = 3;
+const WICBitmapTransformFlipHorizontal = 8;
+const WICBitmapTransformFlipVertical = 16;
 ```
 
 ## MessageBox Buttons
 ```js
-var MB_OK = 0;
-var MB_OKCANCEL = 1;
-var MB_ABORTRETRYIGNORE = 2;
-var MB_YESNOCANCEL = 3;
-var MB_YESNO = 4;
+const MB_OK = 0;
+const MB_OKCANCEL = 1;
+const MB_ABORTRETRYIGNORE = 2;
+const MB_YESNOCANCEL = 3;
+const MB_YESNO = 4;
 ```
 
 ## MessageBox Icons
 ```js
-var MB_ICONHAND = 16;
-var MB_ICONQUESTION = 32;
-var MB_ICONEXCLAMATION = 48;
-var MB_ICONASTERISK = 64;
+const MB_ICONHAND = 16;
+const MB_ICONQUESTION = 32;
+const MB_ICONEXCLAMATION = 48;
+const MB_ICONASTERISK = 64;
 ```
 
 ## MessageBox Return Values
 ```js
-var IDOK = 1;
-var IDCANCEL = 2;
-var IDABORT = 3;
-var IDRETRY = 4;
-var IDIGNORE = 5;
-var IDYES = 6;
-var IDNO = 7;
+const IDOK = 1;
+const IDCANCEL = 2;
+const IDABORT = 3;
+const IDRETRY = 4;
+const IDIGNORE = 5;
+const IDYES = 6;
+const IDNO = 7;
 ```
 
 ## AppendMenuItem Flags
 ```js
-var MF_SEPARATOR = 0x00000800;
-var MF_ENABLED = 0x00000000;
-var MF_GRAYED = 0x00000001;
-var MF_DISABLED = 0x00000002;
-var MF_UNCHECKED = 0x00000000;
-var MF_CHECKED = 0x00000008;
-var MF_STRING = 0x00000000;
-var MF_MENUBARBREAK = 0x00000020;
-var MF_MENUBREAK = 0x00000040;
-// var MF_BITMAP; // do not use
-// var MF_OWNERDRAW // do not use
-// var MF_POPUP // do not use
+const MF_SEPARATOR = 0x00000800;
+const MF_ENABLED = 0x00000000;
+const MF_GRAYED = 0x00000001;
+const MF_DISABLED = 0x00000002;
+const MF_UNCHECKED = 0x00000000;
+const MF_CHECKED = 0x00000008;
+const MF_STRING = 0x00000000;
+const MF_MENUBARBREAK = 0x00000020;
+const MF_MENUBREAK = 0x00000040;
+// const MF_BITMAP; // do not use
+// const MF_OWNERDRAW // do not use
+// const MF_POPUP // do not use
 ```
 
 [https://docs.microsoft.com/en-gb/windows/win32/api/winuser/nf-winuser-appendmenua](https://docs.microsoft.com/en-gb/windows/win32/api/winuser/nf-winuser-appendmenua)
 
 ## TrackPopupMenu Flags
 ```js
-var TPM_LEFTALIGN = 0x0000;
-var TPM_CENTERALIGN = 0x0004;
-var TPM_RIGHTALIGN = 0x0008;
-var TPM_TOPALIGN = 0x0000;
-var TPM_VCENTERALIGN = 0x0010;
-var TPM_BOTTOMALIGN = 0x0020;
-var TPM_HORIZONTAL = 0x0000;
-var TPM_VERTICAL = 0x0040;
-var TPM_HORPOSANIMATION = 0x0400;
-var TPM_HORNEGANIMATION = 0x0800;
-var TPM_VERPOSANIMATION = 0x1000;
-var TPM_VERNEGANIMATION = 0x2000;
-var TPM_NOANIMATION = 0x4000;
+const TPM_LEFTALIGN = 0x0000;
+const TPM_CENTERALIGN = 0x0004;
+const TPM_RIGHTALIGN = 0x0008;
+const TPM_TOPALIGN = 0x0000;
+const TPM_VCENTERALIGN = 0x0010;
+const TPM_BOTTOMALIGN = 0x0020;
+const TPM_HORIZONTAL = 0x0000;
+const TPM_VERTICAL = 0x0040;
+const TPM_HORPOSANIMATION = 0x0400;
+const TPM_HORNEGANIMATION = 0x0800;
+const TPM_VERPOSANIMATION = 0x1000;
+const TPM_VERNEGANIMATION = 0x2000;
+const TPM_NOANIMATION = 0x4000;
 ```
 
 [https://docs.microsoft.com/en-gb/windows/win32/api/winuser/nf-winuser-trackpopupmenu](https://docs.microsoft.com/en-gb/windows/win32/api/winuser/nf-winuser-trackpopupmenu)
 
 ## Mouse Mask Values
 ```js
-var MK_LBUTTON = 0x0001;
-var MK_RBUTTON = 0x0002;
-var MK_SHIFT = 0x0004;
-var MK_CONTROL = 0x0008;
-var MK_MBUTTON = 0x0010;
-var MK_XBUTTON1 = 0x0020;
-var MK_XBUTTON2 = 0x0040;
+const MK_LBUTTON = 0x0001;
+const MK_RBUTTON = 0x0002;
+const MK_SHIFT = 0x0004;
+const MK_CONTROL = 0x0008;
+const MK_MBUTTON = 0x0010;
+const MK_XBUTTON1 = 0x0020;
+const MK_XBUTTON2 = 0x0040;
 ```
 
 ## SetCursor Values
 ```js
-var IDC_ARROW = 32512;
-var IDC_IBEAM = 32513;
-var IDC_WAIT = 32514;
-var IDC_CROSS = 32515;
-var IDC_UPARROW = 32516;
-var IDC_SIZE = 32640;
-var IDC_ICON = 32641;
-var IDC_SIZENWSE = 32642;
-var IDC_SIZENESW = 32643;
-var IDC_SIZEWE = 32644;
-var IDC_SIZENS = 32645;
-var IDC_SIZEALL = 32646;
-var IDC_NO = 32648;
-var IDC_APPSTARTING = 32650;
-var IDC_HAND = 32649;
-var IDC_HELP = 32651;
+const IDC_ARROW = 32512;
+const IDC_IBEAM = 32513;
+const IDC_WAIT = 32514;
+const IDC_CROSS = 32515;
+const IDC_UPARROW = 32516;
+const IDC_SIZE = 32640;
+const IDC_ICON = 32641;
+const IDC_SIZENWSE = 32642;
+const IDC_SIZENESW = 32643;
+const IDC_SIZEWE = 32644;
+const IDC_SIZENS = 32645;
+const IDC_SIZEALL = 32646;
+const IDC_NO = 32648;
+const IDC_APPSTARTING = 32650;
+const IDC_HAND = 32649;
+const IDC_HELP = 32651;
 ```
 
 ## FILE_ATTRIBUTE
 ```js
-var FILE_ATTRIBUTE_READONLY = 0x00000001;
-var FILE_ATTRIBUTE_HIDDEN = 0x00000002;
-var FILE_ATTRIBUTE_SYSTEM = 0x00000004;
-var FILE_ATTRIBUTE_DIRECTORY = 0x00000010;
-var FILE_ATTRIBUTE_ARCHIVE = 0x00000020;
-var FILE_ATTRIBUTE_NORMAL = 0x00000080;
-var FILE_ATTRIBUTE_TEMPORARY = 0x00000100;
-var FILE_ATTRIBUTE_SPARSE_FILE = 0x00000200;
-var FILE_ATTRIBUTE_REPARSE_POINT = 0x00000400;
-var FILE_ATTRIBUTE_COMPRESSED = 0x00000800;
-var FILE_ATTRIBUTE_OFFLINE = 0x00001000;
-var FILE_ATTRIBUTE_NOT_CONTENT_INDEXED = 0x00002000;
-var FILE_ATTRIBUTE_ENCRYPTED = 0x00004000;
-// var FILE_ATTRIBUTE_DEVICE // do not use
-// var FILE_ATTRIBUTE_VIRTUAL // do not use
+const FILE_ATTRIBUTE_READONLY = 0x00000001;
+const FILE_ATTRIBUTE_HIDDEN = 0x00000002;
+const FILE_ATTRIBUTE_SYSTEM = 0x00000004;
+const FILE_ATTRIBUTE_DIRECTORY = 0x00000010;
+const FILE_ATTRIBUTE_ARCHIVE = 0x00000020;
+const FILE_ATTRIBUTE_NORMAL = 0x00000080;
+const FILE_ATTRIBUTE_TEMPORARY = 0x00000100;
+const FILE_ATTRIBUTE_SPARSE_FILE = 0x00000200;
+const FILE_ATTRIBUTE_REPARSE_POINT = 0x00000400;
+const FILE_ATTRIBUTE_COMPRESSED = 0x00000800;
+const FILE_ATTRIBUTE_OFFLINE = 0x00001000;
+const FILE_ATTRIBUTE_NOT_CONTENT_INDEXED = 0x00002000;
+const FILE_ATTRIBUTE_ENCRYPTED = 0x00004000;
+// const FILE_ATTRIBUTE_DEVICE // do not use
+// const FILE_ATTRIBUTE_VIRTUAL // do not use
 ```
 
 [http://msdn.microsoft.com/en-us/library/ee332330%28VS.85%29.aspx](http://msdn.microsoft.com/en-us/library/ee332330%28VS.85%29.aspx)
 
 ## Keyboard Mask Values
 ```js
-var VK_BACK = 0x08;
-var VK_TAB = 0x09;
-var VK_RETURN = 0x0D;
-var VK_SHIFT = 0x10;
-var VK_CONTROL = 0x11;
-var VK_ALT = 0x12;
-var VK_ESCAPE = 0x1B;
-var VK_PGUP = 0x21;
-var VK_PGDN = 0x22;
-var VK_END = 0x23;
-var VK_HOME = 0x24;
-var VK_LEFT = 0x25;
-var VK_UP = 0x26;
-var VK_RIGHT = 0x27;
-var VK_DOWN = 0x28;
-var VK_INSERT = 0x2D;
-var VK_DELETE = 0x2E;
-var VK_SPACEBAR = 0x20;
+const VK_BACK = 0x08;
+const VK_TAB = 0x09;
+const VK_RETURN = 0x0D;
+const VK_SHIFT = 0x10;
+const VK_CONTROL = 0x11;
+const VK_ALT = 0x12;
+const VK_ESCAPE = 0x1B;
+const VK_PGUP = 0x21;
+const VK_PGDN = 0x22;
+const VK_END = 0x23;
+const VK_HOME = 0x24;
+const VK_LEFT = 0x25;
+const VK_UP = 0x26;
+const VK_RIGHT = 0x27;
+const VK_DOWN = 0x28;
+const VK_INSERT = 0x2D;
+const VK_DELETE = 0x2E;
+const VK_SPACEBAR = 0x20;
 ```
 
 ## AlbumArtId
 ```js
-var AlbumArtId = {
+const AlbumArtId = {
 	front : 0,
 	back : 1,
 	disc : 2,
@@ -240,7 +240,7 @@ var AlbumArtId = {
 
 ## AlbumArtType
 ```js
-var AlbumArtType = {
+const AlbumArtType = {
 	embedded : 0,
 	default : 1,
 	stub : 2,
@@ -249,7 +249,7 @@ var AlbumArtType = {
 
 ## ColourType
 ```js
-var ColourType = {
+const ColourType = {
 	text : 0,
 	background : 1,
 	highlight : 2,
@@ -259,7 +259,7 @@ var ColourType = {
 
 ## FontType
 ```js
-var FontType = {
+const FontType = {
 	defaults : 0,
 	tabs : 1,
 	lists : 2,
@@ -271,7 +271,7 @@ var FontType = {
 
 ## PlaylistLockFilterMask
 ```js
-var PlaylistLockFilterMask = {
+const PlaylistLockFilterMask = {
 	filter_add : 1,
 	filter_remove : 2,
 	filter_reorder : 4,
@@ -283,7 +283,7 @@ var PlaylistLockFilterMask = {
 
 ## ReplaygainMode
 ```js
-var ReplaygainMode = {
+const ReplaygainMode = {
 	None : 0,
 	Track : 1,
 	Album : 2,
@@ -293,7 +293,7 @@ var ReplaygainMode = {
 
 ## PlaybackOrder
 ```js
-var PlaybackOrder = {
+const PlaybackOrder = {
 	Default : 0,
 	Repeat_Playlist : 1,
 	Repeat_Track : 2,
@@ -306,7 +306,7 @@ var PlaybackOrder = {
 
 ## PlaybackQueueOrigin
 ```js
-var PlaybackQueueOrigin = {
+const PlaybackQueueOrigin = {
 	user_added : 0,
 	user_removed : 1,
 	playback_advance : 2,
@@ -315,7 +315,7 @@ var PlaybackQueueOrigin = {
 
 ## PlaybackStartingCMD
 ```js
-var PlaybackStartingCMD = {
+const PlaybackStartingCMD = {
 	default : 0,
 	play : 1,
 	next : 2,
@@ -328,7 +328,7 @@ var PlaybackStartingCMD = {
 
 ## PlaybackStopReason
 ```js
-var PlaybackStopReason = {
+const PlaybackStopReason = {
 	user : 0,
 	eof : 1,
 	starting_another : 2,
@@ -337,7 +337,7 @@ var PlaybackStopReason = {
 
 ## SelectionType
 ```js
-var SelectionType = {
+const SelectionType = {
 	undefined : 0,
 	active_playlist_selection : 1,
 	caller_active_playlist : 2,
