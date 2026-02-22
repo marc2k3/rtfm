@@ -244,7 +244,7 @@ Use this to determine the type(s) of locks applied to the specified playlist.
 	}
 	```
 
-For convenience, these methods are included in `helpers.txt`.
+For convenience, these methods are included in `helpers.js`.
 
 ```js
 

@@ -1,8 +1,8 @@
-All of these are provided in `helpers.txt` bundled with the component. You
+All of these are provided in `helpers.js` bundled with the component. You
 can include it for use in any script like this.
 
 ```
-include(fb.ComponentPath + 'helpers.txt');
+include(fb.ComponentPath + 'helpers.js');
 ```
 
 ## DWRITE_FONT_WEIGHT

@@ -14,7 +14,7 @@ the `utils.CreateTextLayout` examples below.
 
 !!! example
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
 	/*
 	This sample splits a string in to whole words and then randomly
@@ -79,9 +79,9 @@ This example demonstrates scrollable text, a single font and a different colour 
 
 !!! example
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
-	// see CreateFontString in helpers.txt
+	// see CreateFontString in helpers.js
 	var font = CreateFontString('Segoe UI', 24);
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 	var layout = utils.CreateTextLayout(text, font);
@@ -144,7 +144,7 @@ This example demonstrates scrollable text, per-word colouring and per-word fonts
 
 !!! example
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
 	var installed_fonts = utils.ListFonts();
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';

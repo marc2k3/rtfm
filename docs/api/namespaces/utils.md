@@ -101,7 +101,7 @@ you can supply a vertical offset.
 
 !!! example
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
 	var font = CreateFontString('Segoe UI', 20);
 	var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
@@ -421,7 +421,7 @@ Returns a [MessageBox Return Value](../flags.md#messagebox-return-values).
 
 !!! example
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
 	var prompt = "Do you really want to open the Preferences?";
 	var title = "A very important question";

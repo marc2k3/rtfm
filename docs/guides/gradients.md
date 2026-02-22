@@ -54,7 +54,7 @@ var linear_brush = {
 
 The `Start` and `End` values are relative to the `x` and `y` positions of the rectangle.
 
-If we lift `FillGradientRectangle` from `helpers.txt`, we can inspect a working example.
+If we lift `FillGradientRectangle` from `helpers.js`, we can inspect a working example.
 
 ```js
 function FillGradientRectangle(gr, x, y, w, h, direction, colour1, colour2) {
@@ -87,7 +87,7 @@ For a diagonal effect, you can do something like this:
 
 !!! example
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
 	var stops = [
 		[0, RGB(255, 0, 0)],

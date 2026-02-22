@@ -78,7 +78,7 @@ No return value.
 	Mask images don't have to have the same width/height.
 
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
 	var temp_gr;
 

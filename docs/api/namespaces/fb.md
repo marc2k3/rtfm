@@ -160,12 +160,12 @@ other components, a file selection from Explorer, etc.
 
 !!! example
 	```js
-	include(fb.ComponentPath + 'helpers.txt');
+	include(fb.ComponentPath + 'helpers.js');
 
 	function on_mouse_rbtn_up(x, y) {
 		var ap = plman.ActivePlaylist;
 
-		// PlaylistCanAddItems is defined in helpers.txt, it uses
+		// PlaylistCanAddItems is defined in helpers.js, it uses
 		// plman.GetPlaylistLockFilterMask to determine if the active playlist
 		// permits adding items
 		// MF_STRING and MF_GRAYED are also defined there.

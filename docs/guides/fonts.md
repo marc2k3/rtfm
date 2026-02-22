@@ -91,7 +91,7 @@ and then stringify it again.
 ## Creating your own from scratch
 
 Writing your own `JSON.stringify` statement for every font you create would be a bit cumbersome
-so `helpers.txt` contains a simplified method to use anywhere.
+so `helpers.js` contains a simplified method to use anywhere.
 
 ```js
 function CreateFontString(name, size, bold) {
