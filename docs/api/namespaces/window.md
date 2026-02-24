@@ -42,8 +42,35 @@ Returns an [IMenuObj](../interfaces/IMenuObj.md) instance.
 
 Returns an [ITooltip](../interfaces/ITooltip.md) instance.
 
-## window.DefineScript(name[, options])
-/// TODO
+## `window.DefineScript(name[, options])`
+|Arguments|||
+|---|---|---|
+|name|`string`|This will be available via `window.Name`.
+|options|`object`|Empty by default.|
+
+The `options` object may contain an `author` and `version` as `strings`.
+
+Additionally, you can supply a `features` object containing `grab_focus` and `drag_n_drop`
+which are `boolean` values.
+
+!!! example
+	```js
+	window.DefineScript(
+		'JS Playlist',
+		{
+			author : 'Br3tt aka Falstaff',
+			features : {
+				drag_n_drop : true,
+				grab_focus : true
+			}
+		}
+	);
+	```
+
+!!! example
+	```js
+	window.DefineScript('Properties', {author:'marc2003'});
+	```
 
 ## `window.GetUIColour(type)`
 |Arguments|||
