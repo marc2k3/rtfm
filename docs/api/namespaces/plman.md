@@ -247,10 +247,6 @@ Use this to determine the type(s) of locks applied to the specified playlist.
 For convenience, these methods are included in `helpers.js`.
 
 ```js
-
-
-
-
 function playlist_can_add_items(playlistIndex) {
 	return !(plman.GetPlaylistLockFilterMask(playlistIndex) & PlaylistLockFilterMask.filter_add);
 }
