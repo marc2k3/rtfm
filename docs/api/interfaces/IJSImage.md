@@ -50,6 +50,11 @@ No return value.
 
 Returns an array.
 
+!!! note
+	This uses the `KMeans` algorithm internally so should produce similar results to
+	`GetColourSchemeJSON` from other components except it returns the colours only
+	without the frequency.
+
 !!! example
 	```js
 	// Tracks playlist selection
