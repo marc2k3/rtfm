@@ -7,9 +7,7 @@ It allows the creation of customisable panels that can be written with
 
 Under the hood, it uses the `Spider Monkey` engine (`102.12esr`) taken from `Spider Monkey Panel`
 but all graphics rendering is `Direct2D` taken from `JScript Panel 3`. Also, all API
-design choices are my own from `JScript Panel 3`. Everything I hated about `Spider Monkey Panel`
-like the package manager and html dialog have been removed. Also, there is zero `ActiveX`
-support. That nonsense needs to die.
+design choices are my own from `JScript Panel 3`.
 
 Here are just some of the features provided by the component...
 
