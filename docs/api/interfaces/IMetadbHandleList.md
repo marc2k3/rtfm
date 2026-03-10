@@ -39,7 +39,7 @@ No return value.
 
 No return value.
 
-## `AttachImage(image_path art_id)`
+## `AttachImage(image_path, art_id)`
 |Arguments|||
 |---|---|---|
 |image_path|`string`|
@@ -61,18 +61,6 @@ no need to remove it first.
 		handle_list.AttachImage(image_path, 0);
 	}
 	```
-
-## `AttachImage2(image[, art_id, format])`
-|Arguments|||
-|---|---|---|
-|image|[IJSImage](IJSImage.md)|
-|art_id|[AlbumArtId](../flags.md#albumartid)|Default `0`.|
-|format|`number`|Default `0` is `JPG`. Use `1` for `WebP`.|
-
-No return value.
-
-Any existing artwork with the specified `art_id` will be
-overwritten. There is no need to remove it first.
 
 ## `CalcTotalDuration()`
 Returns total in seconds.
