@@ -81,7 +81,7 @@ Parent folders are created if they don't exist.
 |width|`number`|
 |height|`number`|
 
-Returns an [IJSImage](../interfaces/IJSImage.md) instance.
+Returns a [JsImage](../interfaces/JsImage.md) instance.
 
 ## `utils.CreateTextLayout(text, font_str[, text_alignment, paragraph_alignment, word_wrapping, trimming_granularity])`
 |Arguments|||
@@ -93,10 +93,10 @@ Returns an [IJSImage](../interfaces/IJSImage.md) instance.
 |word_wrapping|[DWRITE_WORD_WRAPPING](../flags.md#dwrite_word_wrapping)|Default `0`.|
 |trimming_granularity|[DWRITE_TRIMMING_GRANULARITY](../flags.md#dwrite_trimming_granularity)|Default `0`.|
 
-Returns an [ITextLayout](../interfaces/ITextLayout.md) instance.
+Returns a [JsTextLayout](../interfaces/JsTextLayout.md) instance.
 
 You typically use this when you want to calculate the height of a string
-that wraps over multiple lines or need scrolling. When passing to [IJSGraphics WriteTextLayout](../interfaces/IJSGraphics.md#writetextlayouttext_layout-colour-x-y-w-h-vertical_offset),
+that wraps over multiple lines or need scrolling. When passing to [JsGraphics WriteTextLayout](../interfaces/JsGraphics.md#writetextlayouttext_layout-colour-x-y-w-h-vertical_offset),
 you can supply a vertical offset.
 
 !!! example
@@ -400,7 +400,7 @@ Returns an array.
 |path|`string`|Any valid image supported by the `Windows Imaging Component`.|
 |max_size|`number`|Default is `0` which leaves the original untouched.|
 
-Returns an [IJSBitmap](../interfaces/IJSBitmap.md) instance or `null` on failure.
+Returns a [JsBitmap](../interfaces/JsBitmap.md) instance or `null` on failure.
 
 ## `utils.LoadImage(path[, max_size])`
 |Arguments|||
@@ -408,7 +408,7 @@ Returns an [IJSBitmap](../interfaces/IJSBitmap.md) instance or `null` on failure
 |path|`string`|Any valid image supported by the `Windows Imaging Component`.|
 |max_size|`number`|Default is `0` which leaves the original untouched.|
 
-Returns an [IJSImage](../interfaces/IJSImage.md) instance or `null` on failure.
+Returns a [JsImage](../interfaces/JsImage.md) instance or `null` on failure.
 
 ## `utils.MessageBox(prompt, title, flags)`
 |Arguments|||

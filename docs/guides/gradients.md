@@ -1,7 +1,7 @@
 # Gradients
 
 !!! note
-	`gr` on this page refers to [IJSGraphics](../api/interfaces/IJSGraphics.md)
+	`gr` on this page refers to [JsGraphics](../api/interfaces/JsGraphics.md)
 
 Using `gr.FillRectangle` as an example, most will know the last argument is a
 `number` to represent a colour.

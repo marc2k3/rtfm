@@ -1,12 +1,12 @@
 # Styling Ranges Of Text
 
 !!! note
-	If any text you pass to `IJSGraphics WriteText` or `utils.CreateTextLayout` contain `$rgb`/`$font` code,
+	If any text you pass to `JsGraphics WriteText` or `utils.CreateTextLayout` contain `$rgb`/`$font` code,
 	any colour/font arrays described on this page will be ignored. Title formatting always take precedence.
 
-## Using `IJSGraphics WriteText`
+## Using `JsGraphics WriteText`
 
-This first example uses [IJSGraphics WriteText](../api/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
+This first example uses [JsGraphics WriteText](../api/interfaces/JsGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity)
 where you can apply custom fonts/colours to a single string.
 
 The limitation here is that scrolling text vertically is not supported so if you need that, you'll need to use
@@ -124,10 +124,16 @@ This example demonstrates scrollable text, a single font and a different colour 
 	}
 
 	function on_mouse_wheel(step) {
-		if (text_height < box.h) return;
+		if (text_height < box.h)
+			return;
+
 		offset += step * 60;
-		if (offset > 0) offset = 0;
-		else if (offset < box.h - text_height) offset = box.h - text_height;
+
+		if (offset > 0)
+			offset = 0;
+		else if (offset < box.h - text_height)
+			offset = box.h - text_height;
+
 		window.Repaint();
 	}
 
@@ -135,8 +141,11 @@ This example demonstrates scrollable text, a single font and a different colour 
 		box.w = window.Width / 2;
 		box.h = window.Height / 2;
 		text_height = layout.CalcTextHeight(box.w);
-		if (text_height < box.h) offset = 0;
-		else if (offset < box.h - text_height) offset = box.h - text_height;
+
+		if (text_height < box.h)
+			offset = 0;
+		else if (offset < box.h - text_height)
+			offset = box.h - text_height;
 	}
 	```
 
@@ -220,10 +229,16 @@ This example demonstrates scrollable text, per-word colouring and per-word fonts
 	}
 
 	function on_mouse_wheel(step) {
-		if (text_height < box.h) return;
+		if (text_height < box.h)
+			return;
+
 		offset += step * 60;
-		if (offset > 0) offset = 0;
-		else if (offset < box.h - text_height) offset = box.h - text_height;
+
+		if (offset > 0)
+			offset = 0;
+		else if (offset < box.h - text_height)
+			offset = box.h - text_height;
+
 		window.Repaint();
 	}
 
@@ -231,7 +246,10 @@ This example demonstrates scrollable text, per-word colouring and per-word fonts
 		box.w = window.Width / 2;
 		box.h = window.Height / 2;
 		text_height = layout.CalcTextHeight(box.w);
-		if (text_height < box.h) offset = 0;
-		else if (offset < box.h - text_height) offset = box.h - text_height;
+
+		if (text_height < box.h)
+			offset = 0;
+		else if (offset < box.h - text_height)
+			offset = box.h - text_height;
 	}
 	```

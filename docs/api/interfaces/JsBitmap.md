@@ -1,0 +1,14 @@
+!!! note
+	The original `JsImage` is perfectly fine for most normal usage except when refreshing the panel
+	numerous times per second. A `JsImage` instance is a wrapper around `IWICBitmap` from the `Windows SDK`
+	and this has to be converted to an `ID2D1Bitmap` for rendering. Doing this repeatedly is ineffecient so this
+	simplified interface creates an `ID2D1Bitmap` once and reuses it.
+
+	See [JsImage CreateBitmap](JsImage.md#createbitmap) and [utils.LoadBitmap](../namespaces/utils.md#utilsloadbitmappath-max_size).
+
+**Properties**
+
+|||||
+|---|---|---|---|
+|Height|`number`|read|
+|Width|`number`|read|

@@ -1,7 +1,7 @@
 ## `BuildMenu(parentMenu, base_id)`
 |Arguments|||
 |---|---|---|
-|parentMenu|[IMenuObj](IMenuObj.md)|
+|parentMenu|[JsMenuObj](JsMenuObj.md)|
 |base_id|`number`|
 
 No return value.

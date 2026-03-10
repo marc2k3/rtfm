@@ -59,8 +59,9 @@ Returns a `JSON` array in string form so you need to use `JSON.parse` on the res
 	```
 
 ## `playback.GetNowPlaying()`
-Returns an [IMetadbHandle](../interfaces/IMetadbHandle.md) instance.
-Now playing item or `null` if [foobar2000](https://www.foobar2000.org) isn't playing.
+Returns a [JsMetadbHandle](../interfaces/JsMetadbHandle.md) instance.
+
+It will be the now playing item or `null` if [foobar2000](https://www.foobar2000.org) isn't playing.
 
 ## `playback.GetOrderNames()`
 Returns an array.

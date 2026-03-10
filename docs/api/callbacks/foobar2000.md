@@ -38,7 +38,7 @@ Called when playlist focus has changed.
 ## `on_item_played(handle)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](../interfaces/IMetadbHandle.md)|
+|handle|[JsMetadbHandle](../interfaces/JsMetadbHandle.md)|
 
 Called when at least one minute of the track has been played or the track has reached its end after at least one third of it has been played.
 
@@ -48,23 +48,23 @@ Called when the `foobar2000` library is initialised on startup. Prior to `foobar
 ## `on_library_items_added(handle_list)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 
 ## `on_library_items_changed(handle_list, fromhook)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 |fromhook|`boolean`|`true` if changes comes from `Playback Statistics` or other components that utilise the same DB functionality.
 
 ## `on_library_items_removed(handle_list)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 
 ## `on_metadb_changed(handle_list, fromhook)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 |fromhook|`boolean`|`true` if changes comes from `Playback Statistics` or other components that utilise the same DB functionality.
 
 Called when metadb contents change. This can be tag updates or database changes from `Playback Statistics` etc.
@@ -81,7 +81,7 @@ Called when stream metadata changes.
 ## `on_playback_edited(handle)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](../interfaces/IMetadbHandle.md)|
+|handle|[JsMetadbHandle](../interfaces/JsMetadbHandle.md)|
 
 Called when currently playing file gets edited.
 
@@ -95,7 +95,7 @@ Called when `Playback follow cursor` state is changed.
 ## `on_playback_new_track(handle)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](../interfaces/IMetadbHandle.md)|
+|handle|[JsMetadbHandle](../interfaces/JsMetadbHandle.md)|
 
 ## `on_playback_order_changed(new_order_index)`
 |Arguments|||

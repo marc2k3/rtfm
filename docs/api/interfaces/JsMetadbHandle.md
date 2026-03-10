@@ -34,7 +34,7 @@ var handle = fb.GetFocusItem();
 ## `Compare(handle)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](IMetadbHandle.md)|
+|handle|[JsMetadbHandle](JsMetadbHandle.md)|
 
 Returns a `boolean` value.
 
@@ -51,7 +51,7 @@ Returns a `boolean` value.
 |art_id|[AlbumArtId](../flags.md#albumartid)|Default `0`.|
 |want_stub|`boolean`|Default `true`.|
 
-Returns an [IJSImage](IJSImage.md) instance or `null` on failure.
+Returns a [JsImage](JsImage.md) instance or `null` on failure.
 
 !!! note
 	This method can return album art from certain radio streams
@@ -82,7 +82,7 @@ Use in conjunction with [on_get_album_art_done](../callbacks/component.md#on_get
 |---|---|---|
 |art_id|[AlbumArtId](../flags.md#albumartid)|Default `0`.|
 
-Returns an [IJSimage](IJSImage.md) instance or `null` on failure.
+Returns a [JsImage](JsImage.md) instance or `null` on failure.
 
 ## `GetAlbumArtThumbAsync([art_id, max_size])`
 |Arguments|||
@@ -96,7 +96,7 @@ Use in conjunction with [on_get_album_art_done](../callbacks/component.md#on_get
 	This method does not retrieve stub images. See [fb.GetAlbumArtStub](../namespaces/fb.md#fbgetalbumartstubart_id).
 
 ## `GetFileInfo()`
-Returns an [IFileInfo](IFileInfo.md) instance.
+Returns a [JsFileInfo](JsFileInfo.md) instance.
 
 ## `IsInLibrary()`
 Returns a `boolean` value.

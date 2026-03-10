@@ -12,7 +12,7 @@ No return value.
 ## `DrawBitmap(bitmap, dstX, dstY, dstW, dstH, srcX, srcY, srcW, srcH[, opacity, angle])`
 |Arguments|||
 |---|---|---|
-|bitmap|[IJSBitmap](IJSBitmap.md)|
+|bitmap|[JsBitmap](JsBitmap.md)|
 |dstX|`number`|
 |dstY|`number`|
 |dstW|`number`|
@@ -41,7 +41,7 @@ No return value.
 ## `DrawImage(image, dstX, dstY, dstW, dstH, srcX, srcY, srcW, srcH[, opacity, angle])`
 |Arguments|||
 |---|---|---|
-|image|[IJSImage](IJSImage.md)|
+|image|[JsImage](JsImage.md)|
 |dstX|`number`|
 |dstY|`number`|
 |dstW|`number`|
@@ -58,8 +58,8 @@ No return value.
 ## `DrawImageWithMask(image, mask_image, x, y, w, h)`
 |Arguments|||
 |---|---|---|
-|image|[IJSImage](IJSImage.md)|
-|mask_image|[IJSImage](IJSImage.md)|
+|image|[JsImage](JsImage.md)|
+|mask_image|[JsImage](JsImage.md)|
 |x|`number`|
 |y|`number`|
 |w|`number`|
@@ -262,7 +262,7 @@ No return value.
 ## `WriteTextLayout(text_layout, colour, x, y, w, h, vertical_offset)`
 |Arguments|||
 |---|---|---|
-|text_layout|[ITextLayout](ITextLayout.md)|
+|text_layout|[JsTextLayout](JsTextLayout.md)|
 |colour|`number`, `string`|See note below.|
 |x|`number`|
 |y|`number`|

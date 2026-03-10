@@ -32,7 +32,7 @@ No return value.
 No return value.
 
 ## `window.CreatePopupMenu()`
-Returns an [IMenuObj](../interfaces/IMenuObj.md) instance.
+Returns a [JsMenuObj](../interfaces/JsMenuObj.md) instance.
 
 ## `window.CreateTooltip([font_name, font_size_px)`
 |Arguments|||
@@ -40,7 +40,7 @@ Returns an [IMenuObj](../interfaces/IMenuObj.md) instance.
 |font_name|`string`|Default `Segoe UI`.|
 |font_size_px|`number`|Default `16`.|
 
-Returns an [ITooltip](../interfaces/ITooltip.md) instance.
+Returns a [JsTooltip](../interfaces/JsTooltip.md) instance.
 
 ## `window.DefineScript(name[, options])`
 |Arguments|||
@@ -222,7 +222,7 @@ See [window.GetProperty](#windowgetpropertyname-default_value) for an example.
 ## `window.SetSelection(handle_list[, type])`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 |type|[SelectionType](../flags.md#selectiontype)|Default `0`.|
 
 !!! example

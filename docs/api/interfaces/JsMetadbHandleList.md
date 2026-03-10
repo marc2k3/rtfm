@@ -28,14 +28,14 @@ Count|`number`|read|
 ## `AddItem(handle)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](IMetadbHandle.md)|
+|handle|[JsMetadbHandle](JsMetadbHandle.md)|
 
 No return value.
 
 ## `AddItems(handle_list)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](JsMetadbHandleList.md)|
 
 No return value.
 
@@ -69,7 +69,7 @@ Returns total in seconds.
 Returns total in bytes.
 
 ## `Clone()`
-Returns an [IMetadbHandleList](IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](JsMetadbHandleList.md) instance.
 
 !!! example
 	```js
@@ -125,7 +125,7 @@ Returns a `number`.
 |---|---|---|
 |count|`number`|
 
-Returns an [IMetadbHandleList](IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](JsMetadbHandleList.md) instance.
 
 It will be a copy of the original handle list with `count` handles removed
 from the beginning. If the supplied `count` exceeds the handle list count,
@@ -134,7 +134,7 @@ an empty handle list will be returned.
 ## `Find(handle)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](IMetadbHandle.md)|
+|handle|[JsMetadbHandle](JsMetadbHandle.md)|
 
 Returns position of handle or `-1` on failure.
 
@@ -143,7 +143,7 @@ Returns position of handle or `-1` on failure.
 |---|---|---|
 |index|`number`|
 
-Returns an [IMetadbHandle](IMetadbHandle.md) instance.
+Returns a [JsMetadbHandle](JsMetadbHandle.md) instance.
 
 !!! example
 	```js
@@ -216,7 +216,7 @@ from 3rd party components if present.
 |---|---|---|
 |query|`string`|
 
-Returns an [IMetadbHandleList](IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](JsMetadbHandleList.md) instance.
 
 !!! note
 	Errors will be thrown on invalid queries so if you're not
@@ -253,7 +253,7 @@ The allows library viewers to cater for multiple value tags.
 |Arguments|||
 |---|---|---|
 |index|`number`|
-|handle|[IMetadbHandle](IMetadbHandle.md)|
+|handle|[JsMetadbHandle](JsMetadbHandle.md)|
 
 No return value.
 
@@ -267,14 +267,14 @@ No return value.
 |Arguments|||
 |---|---|---|
 |index|`number`|
-|handle_list|[IMetadbHandleList](IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](JsMetadbHandleList.md)|
 
 No return value.
 
 ## `MakeDifference(handle_list)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](JsMetadbHandleList.md)|
 
 No return value.
 
@@ -292,7 +292,7 @@ items in `one` will be randomised. `two` should be untouched.
 ## `MakeIntersection(handle_list)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](JsMetadbHandleList.md)|
 
 No return value.
 
@@ -378,7 +378,7 @@ No return value.
 |Arguments|||
 |---|---|---|
 |index|`number`|
-|handle|[IMetadbHandle](IMetadbHandle.md)|
+|handle|[JsMetadbHandle](JsMetadbHandle.md)|
 
 No return value.
 
@@ -445,7 +445,7 @@ No return value.
 |---|---|---|
 |count|`number`|
 
-Returns an [IMetadbHandleList](IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](JsMetadbHandleList.md) instance.
 
 It will contain the first `count` handles from the original handle list. If the `count`
 exceeds the handle list count, a copy will be returned.

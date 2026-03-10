@@ -12,11 +12,11 @@ Called when thread created by [utils.DownloadFileAsync](../namespaces/utils.md#u
 ## `on_get_album_art_done(handle, art_id, image)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](../interfaces/IMetadbHandle.md)|
+|handle|[JsMetadbHandle](../interfaces/JsMetadbHandle.md)|
 |art_id|`number`|
-|image|[IJSImage](../interfaces/IJSImage.md)|Could be `null` on failure.|
+|image|[JsImage](../interfaces/JsImage.md)|Could be `null` on failure.|
 
-Called when thread created by [IMetadbHandle GetAlbumArtAsync](../interfaces/IMetadbHandle.md#getalbumartasyncart_id) or [IMetadbHandle GetAlbumArtThumbAsync](../interfaces/IMetadbHandle.md#getalbumartthumbasyncart_id-max_size) is done.
+Called when thread created by [JsMetadbHandle GetAlbumArtAsync](../interfaces/JsMetadbHandle.md#getalbumartasyncart_id) or [JsMetadbHandle GetAlbumArtThumbAsync](../interfaces/JsMetadbHandle.md#getalbumartthumbasyncart_id-max_size) is done.
 
 ## `on_http_request_done(task_id, success, response_text, status, response_headers)`
 |Arguments|||
@@ -35,7 +35,7 @@ See [Web Requests](../../guides/web-requests.md) for examples.
 |Arguments|||
 |---|---|---|
 |task_id|`number`|The return value from the original [fb.AddLocationsAsync](../namespaces/fb.md#fbaddlocationsasyncpaths) call.|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 
 Called when thread created by [fb.AddLocationsAsync](../namespaces/fb.md#fbaddlocationsasyncpaths) is done.
 

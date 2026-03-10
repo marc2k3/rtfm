@@ -194,7 +194,7 @@ Returns the found index or `-1` on failure.
 Returns a `string` which is a unique persistent property of the playlist.
 
 ## `plman.GetPlayingItemLocation()`
-Returns an [IPlayingItemLocation](../interfaces/IPlayingItemLocation.md) instance.
+Returns a [JsPlayingItemLocation](../interfaces/JsPlayingItemLocation.md) instance.
 
 ## `plman.GetPlaylistFocusItemIndex(playlistIndex)`
 |Arguments|||
@@ -215,7 +215,7 @@ Returns a `number`.
 |---|---|---|
 |playlistIndex|`number`|
 
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 ## `plman.GetPlaylistLockFilterMask(playlistIndex)`
 |Arguments|||
@@ -293,7 +293,7 @@ Returns a `string`.
 |---|---|---|
 |playlistIndex|`number`|
 
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 ## `plman.GetQueryItems(playlistIndex, query)`
 |Arguments|||
@@ -301,7 +301,7 @@ Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
 |playlistIndex|`number`|Must be valid.|
 |query|`string`|
 
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 !!! note
 	Errors will be thrown on invalid queries so if you're not
@@ -314,7 +314,7 @@ Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
 |---|---|---|
 |index|`number`|Must be valid.|
 
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 !!! example
 	```js
@@ -344,7 +344,7 @@ Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
 |---|---|---|
 |playlistIndex|`number`|Must be valid.|
 |base|`number`|Position in playlist.|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 |select|`boolean`|Default `false`.
 
 No return value.
@@ -354,7 +354,7 @@ No return value.
 |---|---|---|
 |playlistIndex|`number`|Must be valid.|
 |base|`number`|Position in playlist.|
-|handle_list|[IMetadbHandleList](../interfaces/IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](../interfaces/JsMetadbHandleList.md)|
 |select|`boolean`|Default `false`.
 
 No return value.
@@ -539,7 +539,7 @@ No return value.
 |---|---|---|
 |playlistIndex|`number`|Must be valid.|
 |playlistItemIndex|`number`|Must be valid.|
-|handle|[IMetadbHandle](../interfaces/IMetadbHandle.md)|
+|handle|[JsMetadbHandle](../interfaces/JsMetadbHandle.md)|
 
 No return value.
 

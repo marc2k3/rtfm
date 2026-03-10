@@ -17,7 +17,7 @@ Here are just some of the features provided by the component...
 * Ability to create custom buttons/menus.
 * Capture keystrokes/mouse movement/clicks.
 * [Callbacks](api/callbacks/index.md) can be used to trigger code based on various `foobar2000`, `Windows` and `Component` events.
-* Read/[write](api/interfaces/IMetadbHandleList.md#updatefileinfofromjsonstr) file tags.
+* Read/[write](api/interfaces/JsMetadbHandleList.md#updatefileinfofromjsonstr) file tags.
 * Complete manipulation of playlists.
 * Media Library display/sorting/filtering
 * [Save settings](api/namespaces/window.md#windowgetpropertyname-default_value) on a per panel basis. These persist between restarts

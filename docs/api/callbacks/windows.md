@@ -8,7 +8,7 @@
 ## `on_drag_drop(action, x, y, mask)`
 |Arguments|||
 |---|---|---|
-|action|[IDropAction](../interfaces/IDropAction.md)|
+|action|[JsDropAction](../interfaces/JsDropAction.md)|
 |x|`number`|
 |y|`number`|
 |mask|`number`|
@@ -16,7 +16,7 @@
 ## `on_drag_enter(action, x, y, mask)`
 |Arguments|||
 |---|---|---|
-|action|[IDropAction](../interfaces/IDropAction.md)|
+|action|[JsDropAction](../interfaces/JsDropAction.md)|
 |x|`number`|
 |y|`number`|
 |mask|`number`|
@@ -26,7 +26,7 @@
 ## `on_drag_over(action, x, y, mask)`
 |Arguments|||
 |---|---|---|
-|action|[IDropAction](../interfaces/IDropAction.md)|
+|action|[JsDropAction](../interfaces/JsDropAction.md)|
 |x|`number`|
 |y|`number`|
 |mask|`number`|
@@ -77,7 +77,7 @@ You must return `true` if you want to suppress the default context menu. Use the
 ## `on_paint(gr)`
 |Arguments|||
 |---|---|---|
-|gr|[IJSGraphics](../interfaces/IJSGraphics.md)|
+|gr|[JsGraphics](../interfaces/JsGraphics.md)|
 
 Called when window is ready to draw.
 

@@ -1,8 +1,8 @@
 # Fonts
 
 This page is for working with fonts that are passed to
-[IJSGraphics WriteText](../api/interfaces/IJSGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity),
-[IJSGraphics WriteTextSimple](../api/interfaces/IJSGraphics.md#writetextsimpletext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) and
+[JsGraphics WriteText](../api/interfaces/JsGraphics.md#writetexttext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity),
+[JsGraphics WriteTextSimple](../api/interfaces/JsGraphics.md#writetextsimpletext-font-colour-x-y-w-h-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity) and
 [utils.CreateTextLayout](../api/namespaces/utils.md#utilscreatetextlayouttext-font_str-text_alignment-paragraph_alignment-word_wrapping-trimming_granularity).
 
 Unlike other scripting components, fonts need to be supplied as strings. They can be created manually by
@@ -23,7 +23,7 @@ var font = JSON.stringify({
 ```
 
 !!! note
-	`IJSGraphics WriteTextSimple` does not support `Underline` or `Strikethrough`.
+	`JsGraphics WriteTextSimple` does not support `Underline` or `Strikethrough`.
 
 See [Flags](../api/flags.md) for supported `Weight`, `Style` and `Stretch` values.
 

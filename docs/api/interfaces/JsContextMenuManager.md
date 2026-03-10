@@ -3,7 +3,7 @@
 ## `BuildMenu(menu, base_id)`
 |Arguments|||
 |---|---|---|
-|menu|[IMenuObj](IMenuObj.md)|
+|menu|[JsMenuObj](JsMenuObj.md)|
 |base_id|`number`|
 
 No return value.
@@ -17,7 +17,7 @@ Returns a `boolean` value.
 ## `InitContext(handle_list)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](JsMetadbHandleList.md)|
 
 No return value.
 

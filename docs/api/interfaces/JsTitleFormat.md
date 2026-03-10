@@ -23,7 +23,7 @@ Full details [here](https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Title
 ## `EvalWithMetadb(handle)`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](IMetadbHandle.md)|
+|handle|[JsMetadbHandle](JsMetadbHandle.md)|
 
 Returns a `string`.
 
@@ -43,7 +43,7 @@ Returns a `string`.
 ## `EvalWithMetadbs(handle_list)`
 |Arguments|||
 |---|---|---|
-|handle_list|[IMetadbHandleList](IMetadbHandleList.md)|
+|handle_list|[JsMetadbHandleList](JsMetadbHandleList.md)|
 
 Returns an array.
 

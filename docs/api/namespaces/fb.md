@@ -81,14 +81,14 @@ No return value.
 Clears active playlist. If you wish to clear a specific playlist, use [plman.ClearPlaylist](plman.md#plmanclearplaylistplaylistindex).
 
 ## `fb.CreateContextMenuManager()`
-Returns an [IContextMenuManager](../interfaces/IContextMenuManager.md) instance.
+Returns a [JsContextMenuManager](../interfaces/JsContextMenuManager.md) instance.
 
 ## `fb.CreateHandleList([handle])`
 |Arguments|||
 |---|---|---|
-|handle|[IMetadbHandle](../interfaces/IMetadbHandle.md), optional|
+|handle|[JsMetadbHandle](../interfaces/JsMetadbHandle.md), optional|
 
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 !!! example
 	```js
@@ -103,7 +103,7 @@ Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
 |---|---|---|
 |root_name|`string`|Must be one of `File`, `Edit`, `View`, `Playback`, `Library`, `Help`.
 
-Returns an [IMainMenuManager](../interfaces/IMainMenuManager.md) instance.
+Returns a [JsMainMenuManager](../interfaces/JsMainMenuManager.md) instance.
 
 ## `fb.EnumerateMainMenuCommands()`
 Returns a `JSON` array in string form so you need to use `JSON.parse` on the result.
@@ -142,7 +142,7 @@ No return value.
 |---|---|---|
 |art_id|[AlbumArtId](../flags.md#albumartid)|Default `0`.|
 
-Returns an [IJSImage](../interfaces/IJSImage.md) instance or `null` on failure.
+Returns a [JsImage](../interfaces/JsImage.md) instance or `null` on failure.
 
 ## `fb.GetAudioChunk(requested_length[, offset])`
 |Arguments|||
@@ -150,10 +150,10 @@ Returns an [IJSImage](../interfaces/IJSImage.md) instance or `null` on failure.
 |requested_length|`number`|seconds|
 |offset|`number`|Default `0`|
 
-Returns an [IAudioChunk](../interfaces/IAudioChunk.md) instance or `null` on failure.
+Returns a [JsAudioChunk](../interfaces/JsAudioChunk.md) instance or `null` on failure.
 
 ## `fb.GetClipboardContents()`
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 Clipboard contents can be handles copied to the clipboard in
 other components, a file selection from Explorer, etc.
@@ -187,7 +187,7 @@ other components, a file selection from Explorer, etc.
 	```
 
 ## `fb.GetFocusItem()`
-Returns an [IMetadbHandle](../interfaces/IMetadbHandle.md) instance.
+Returns a [JsMetadbHandle](../interfaces/JsMetadbHandle.md) instance.
 
 Handle of the currently selected active playlist item or `null` on failure.
 
@@ -196,14 +196,14 @@ Handle of the currently selected active playlist item or `null` on failure.
 |---|---|---|
 |query|`string`|Optional. If omitted or invalid, all items will be returned.|
 
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 ## `fb.GetSelection([flags])`
 |Arguments|||
 |---|---|---|
 |flags|`number`|Default `0`, `1` no now playing|
 
-Returns an [IMetadbHandleList](../interfaces/IMetadbHandleList.md) instance.
+Returns a [JsMetadbHandleList](../interfaces/JsMetadbHandleList.md) instance.
 
 ## `fb.GetSelectionType()`
 Returns a [SelectionType](../flags.md#selectiontype)
@@ -227,7 +227,7 @@ No return value.
 Returns `true` if a matching command was found, `false` otherwise.
 
 !!! note
-	This method is for the currently playing file only. See also: [IMetadbHandleList RunContextCommand](../interfaces/IMetadbHandleList.md#runcontextcommandcommand).
+	This method is for the currently playing file only. See also: [JsMetadbHandleList RunContextCommand](../interfaces/JsMetadbHandleList.md#runcontextcommandcommand).
 
 ## `fb.RunMainMenuCommand(command)`
 |Arguments|||
@@ -272,4 +272,4 @@ No return value.
 |---|---|---|
 |pattern|`string`|
 
-Returns an [ITitleFormat](../interfaces/ITitleFormat.md) instance.
+Returns a [JsTitleFormat](../interfaces/JsTitleFormat.md) instance.

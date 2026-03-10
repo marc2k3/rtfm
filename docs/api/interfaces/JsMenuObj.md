@@ -60,7 +60,7 @@ No return value.
 ## `AppendTo(parentMenu, flags, text)`
 |Arguments|||
 |---|---|---|
-|parentMenu|[IMenuObj](IMenuObj.md)|
+|parentMenu|[JsMenuObj](JsMenuObj.md)|
 flags|[AppendMenuItem Flags](../flags.md#appendmenuitem-flags)|
 |text|`string`|
 
